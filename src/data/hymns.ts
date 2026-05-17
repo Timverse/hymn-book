@@ -1279,8 +1279,119 @@ export const HYMNS: Hymn[] = [
       "3. Ynda la wai la ka por kam jong nga,\nNga kyrmen ban poi sha la ka shnong;\nHangta ngan sah suk khlem jingsngewsih,\nNgan ïaroh ïa me junom shisha."
     ],
     chorus: "To ai bor, to ai bor, ko Jisu,\nNga donkam eh la u mynsiem bakhuid;\nTo ai bor, to ai bor, ko Jisu,\nTo synran bad to btin lynti."
+  },
+  {
+    id: "nga-tip-u-trai-un-ri-ia-nga",
+    title: "(R-136) Nga Tip U Trai Un Ri Ïa Nga",
+    number: 116,
+    verses: [
+      "1. Nga tip u Trai un ri ïa nga, lada nga bud ïa u,\nHa ka lynti ka jingshisha un ïai btin beit ïa nga;\nLa ki nongshun kin ker sawdong ban pynkyllon ïa nga,\nNga tip u Trai un ri: ïa nga lada nga bud ïa u.",
+      "2. Nga tip u Trai un ri ïa nga, haba erïong ki wan,\nHapdeng ka thma ka pyrthei un bsa un ri ïa nga;\nU long u nongïarap shisha u bym ju iehnoh shuh,\nNga tip u Trai un ri ïa nga lada nga bud ïa u.",
+      "3. Nga tip u Trai un ri ïa nga, haduh bakut bawai,\nYnda la sep ka sngi jong nga ha kane ka pyrthei;\nNgan sa pdiang la ka pansngiat hangto ha ïng i Pa,\nNga tip u Trai un ri ïa nga lada nga bud ïa u."
+    ],
+    chorus: "Un ri ïa nga, un ri ïa nga,\nNga tip u Trai un ri ïa nga lada nga bud ïa u;\nLa ki nongshun kin ker sawdong ban pynkyllon ïa nga,\nNga tip u Trai un ri ïa nga lada nga bud ïa u."
+  },
+  {
+    id: "to-pynbna-ka-khubor-babha",
+    title: "(R-137) To Pynbna Ka Khubor Babha",
+    number: 117,
+    verses: [
+      "1. To pynbna ka khubor babha kylleng pyrthei,\nKyntiew la ka sur bad rwai da jingrisa;\nBa u Jisu u la wan ban pynim nongpop,\nTo khie to ïathuh baroh kylleng pyrthei.",
+      "2. To ïalap ïa ka ktien u Blei khlem da sepei,\nWat ha kiba lwet dohnud ba dang rangli;\nBa u Jisu u long u nongpynkoit pynkhiah,\nTo khie to ïathuh baroh kylleng pyrthei.",
+      "3. Paidlang bynriew baroh to kyndit thiah mynta,\nTo peit Jisu u dang tyrwa jingaiei;\nKhrit u la wan ban plie ka khyrdop suiñbneng,\nTo khie to ïathuh baroh kylleng pyrthei."
+    ],
+    chorus: "To pynbna, to pynbna,\nKhubor jingpynim ba kordor eh;\nTo pynbna, to pynbna,\nKhubor u Jisu kylleng pyrthei."
+  },
+  {
+    id: "nga-iaid-ha-ka-jingshai",
+    title: "(R-138) Nga Ïaid Ha Ka Jingshai",
+    number: 118,
+    verses: [
+      "1. Naduh ba Jisu u wan shong ha nga,\nNga ïaid ha ka jingshai kaba kynsai;\nJingdum baroh u la beh noh n'nga,\nNga im ha ka jingshai u Trai.",
+      "2. Lyoh dum bakhia ba tap barobor,\nKi la pra noh baroh naduh mynta;\nJingshai sngi ka hok ka tyngshaiñ ha nga,\nNga im ha ka jingshai u Trai.",
+      "3. Ngan ïai ja'm shaphrang khlem da sepei,\nDa bat la ka stieh ka jingngeit skhem;\nHaduh ngan da poi sha ri ka jingshai,\nHangto ngan ïai rwai rwai ïaroh."
+    ],
+    chorus: "Nga ïaid ha ka jingshai, nga ïaid ha jingshai,\nJingshai ka dohnud ka phyrnai shisha;\nNga ïaid ha ka jingshai, nga ïaid ha jingshai,\nNga im ha ka jingshai u Trai."
+  },
+  {
+    id: "ka-snam-iu-jisu-ka-donbor",
+    title: "(R-139) Ka Snam Ïu Jisu Ka Donbor",
+    number: 119,
+    verses: [
+      "1. Phi kwah ban lait na ka pop ka bakhia?\nBor ka don ha ka snam, bor ha ka snam;\nPhi kwah ban jop ïa u soitan mynta?\nDonbor bah ha ka snam u Trai.",
+      "2. Phi kwah ban pynkhuid ïa la ka dohnud?\nBor ka don ha ka snam, bor ha ka snam;\nWan sum ha ka umpohliew Kalbari,\nDonbor bah ha ka snam u Trai.",
+      "3. Phi kwah ban shakri ïa la u Kynrad?\nBor ka don ha ka snam, bor ha ka snam;\nTo rwai ïaroh ïa u man la ka sngi,\nDonbor bah ha ka snam u Trai."
+    ],
+    chorus: "Ka donbor, ka donbor bah shisha,\nHa ka snam jong u Khun langbrot;\nKa donbor, ka donbor bah shisha,\nHa ka snam kordor u Trai."
+  },
+  {
+    id: "ko-jisu-nga-la-thait-la-swai",
+    title: "(R-140) Ko Jisu Nga La Thait La Swai",
+    number: 120,
+    verses: [
+      "1. Ko Jisu nga la thait la swai ha kane ka pyrthei,\nNga ha lynti pilgrim sha ri jingshai;\nTo kdup to ri da la ka kti jingaiei,\nTo btin to ïalam beit ïa nga.",
+      "2. Jingkit bakhia ka ban khia halor jong nga,\nJingpynshoi ki wan tynjuh barobor;\nTo ai bor thymmai ba ngan jop ïa ka thma,\nTo btin to ïalam beit ïa nga.",
+      "3. Ynda la sep ka sngi jong nga ha pyrthei,\nNgan nym sah shuh hapdeng ka jingsngewsih;\nNgan poi hangto sha ïng u Blei u Kpa,\nHangta ngan shong suk junom."
+    ],
+    chorus: "To kdup, to ri da jingaiei Trai,\nHaduh bakut jingleit hangne;\nTo kdup, to ri da jingaiei Trai,\nTo btin to ïalam beit ïa nga."
+  },
+  {
+    id: "ka-umpohliew-ka-jingaiei",
+    title: "(R-141) Ka Umpohliew Ka Jingaiei",
+    number: 121,
+    verses: [
+      "1. Ka jingaiei u Blei ka long kaba phylla,\nKaba pynim kum ïa nga u nongpop;\nMynshwa nga la jah la shem pat mynta,\nMatlah la pynpeit dohnud.",
+      "2. Ka jingaiei ka hikai ban sheptieng u Blei,\nKa weng noh baroh ki jingsheptieng pop;\nKatno kordor ka jingaiei u Trai,\nMynba nga pdiang nyngkong.",
+      "3. Lyngba ki jingeh bad jingpynshoi babun,\nNga la lait im da la ka jingaiei;\nKan ïai btin lynti haduh bakut bawai,\nHaduh ngan da poi sha bneng."
+    ],
+    chorus: "Ka jingaiei, ka jingaiei u Trai,\nKa kham kordor ban ïa kiei kiei;\nKa jingaiei, ka jingaiei u Trai,\nKa pynim ïa nga mynta."
+  },
+  {
+    id: "khrist-jisu-un-wan-pat",
+    title: "(R-142) Khrist Jisu Un Wan Pat",
+    number: 122,
+    verses: [
+      "1. Khrist Jisu un wan pat da ka burom bakhraw,\nBan lum la ki riewkhuid baroh lang phar;\nKi Angel kin ïasoh da jingkmen bad jingrwai,\nSngi ka burom kan sa mih.",
+      "2. Phi la kloi ne em ban ïashem bad u Trai,\nHaba turoi kan riew sawa kylleng;\nPhi la sait ne em la ki jainkup ha snam,\nBan ïeng ha khmat u Syiem?",
+      "3. Katno ka jingkmen kaba khraw ka ban long,\nla kiba la ïaineh ha la u Trai;\nKin ïoh pansngiat ksiar hangto ha burom,\nKin synshar lem bad u Blei."
+    ],
+    chorus: "Un wan pat, un wan pat da shisha,\nKhrist Jisu un wan pat ha pyrthei;\nUn wan pat, un wan pat da shisha,\nSngi ka burom kan sa mih."
+  },
+  {
+    id: "ko-kpa-ba-ieit-buhrieh-ia-nga",
+    title: "(R-143) Ko Kpa Ba Ieit Buhrieh Ïa Nga",
+    number: 123,
+    verses: [
+      "1. Ko Kpa ba ieit buhrieh ïa nga hapoh la jingtap lyoh,\nHaba lyer erïong ka pyrsad jur mynta;\nNgam don kut baskhem da kumwei pat ban rieh,\nLait tang ha me hi ko Kpa.",
+      "2. Mynsiem jong nga ka thait hapdeng ka jingkhuslai,\nHapdeng jingeh pyrthei ba khraw shisha;\nTo pyntngen mynta da u mynsiem bakhuid,\nTo pynhun mynsiem jong nga.",
+      "3. Ynda la wai la ka por kam hangne,\nNga peit sha neng sha ïng ka burom;\nHangta ngan sah suk khlem jingsngewsih shuh,\nNgan ïaroh ïa me junom."
+    ],
+    chorus: "Buhrieh ïa nga, buhrieh ïa nga,\nKo Kpa ba ieit hapoh la jingtap lyoh;\nBuhrieh ïa nga, buhrieh ïa nga,\nLait tang ha me hi ko Kpa."
+  },
+  {
+    id: "jisu-u-la-thied-ia-nga",
+    title: "(R-145) Jisu U La Thied Ïa Nga",
+    number: 124,
+    verses: [
+      "1. Jisu u la thied ïa nga da la ka snam bakhuid,\nMynba nga dang long u mraw ka pop hangne;\nMynta nga la lait na ka kynjri u soitan,\nNga long u khun u Blei.",
+      "2. Jingkmen ka shlei hapoh dohnud jong nga brabor,\nNaduh ba nga la long u jong u Trai;\nNgan nym klet ban rwai ïaroh ïa u junom,\nU long u nongpynim.",
+      "3. To wan phi paidbah kiba dang jah ha lynti,\nJisu u dang khot ïa phi mynta;\nTo pdiang ïa ka jingaiei uba tyrwa,\nPhin ïoh jingim thymmai."
+    ],
+    chorus: "U la thied ïa nga, u la thied ïa nga,\nDa la ka snam bakhuid ha Kalbari;\nU la thied ïa nga, u la thied ïa nga,\nNga long u jong u Trai."
+  },
+  {
+    id: "don-ka-ri-ba-phyrnai",
+    title: "(R-146) Don Ka Ri Ba Phyrnai",
+    number: 125,
+    verses: [
+      "1. Don ka ri kaba phyrnai kaba khambha sha jngai,\nJaka ba ki riewkhuid kin shongneh;\nKhrist Jisu u long u jingshai kaba khraw,\nHangta miet kan nym don shuh.",
+      "2. Jingsngewsih bad ummat kin nym don shuh hangta,\nLa kynriah noh baroh kiei kiei;\nJingsuk kynjai kan synshar badap bashlei,\nHangto ha la ïng i Pa.",
+      "3. Ngin sa ïashem bad kiba ieit b'la leit shuwa,\nKiba la thiah noh ha u Jisu u Trai;\nNgin ïasoh lang da ka sur kaba sngewthiang,\nNgin ïaroh ïa u Khun langbrot."
+    ],
+    chorus: "Sha ka ri ba phyrnai, sha ka ri ba phyrnai,\nNgin sa leit noh shisien ka sngi;\nSha ka ri ba phyrnai, sha ka ri ba phyrnai,\nHangta ngin shong suk junom."
   }
 ];
+
 
 
 
