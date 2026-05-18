@@ -497,5 +497,139 @@ export const songs81to137: Hymn[] = [
       "3. Ngin sa ïashem bad kiba ieit b'la leit shuwa,\nKiba la thiah noh ha u Jisu u Trai;\nNgin ïasoh lang da ka sur kaba sngewthiang,\nNgin ïaroh ïa u Khun langbrot."
     ],
     "chorus": "Sha ka ri ba phyrnai, sha ka ri ba phyrnai,\nNgin sa leit noh shisien ka sngi;\nSha ka ri ba phyrnai, sha ka ri ba phyrnai,\nHangta ngin shong suk junom."
+  },
+  {
+    "id": "umpohliew-bla-kyrkhu",
+    "title": "Umpohliew B'la Kyrkhu",
+    "number": 126,
+    "verses": [
+      "1. Umpohliew ka snam b'la kyrkhu.\nHa pyrthei bapop la pyn-i\nKhun u Blei baieit b'la kyrkhu.\nU pynpaw da la jingmong hi.\nLa na sem jong u nga sakma,\nBad mynsiem ka pang barobor\nHa snam Khunlangbrot sait ia nga.\nBa ngan khan lieh tam ia ka lor.",
+      "2. U la phong ïa ka pansngiat shiah,\nDiengphna-pynjot ïa met jong u;\nJingsngewsih bakthang u la shah,\nKhlem lehnohei jingshah jong u.\nSha umpohliew ïalam ïa nga,\nla ki pop jong nga ban sait phar;\nHa snam b'u la theh sait ïa nga.\nBa ngan kham lieh ban ïa ka ïor.",
+      "3. Ko Kpa na me nga la sakma,\nBunsien mynsiem ka la saja;\nKi saw hain hain ki pop jong nga,\nYm don ba lah ban sait ïa nga.\nJisu sha umpohliew jong me.\nDa shaniah ha kular bakordor:\nA! sait ïa nga ha snam jong me,\nBa ngan kham lieh ban ia ka ïor."
+    ],
+    "chorus": "Kham lich ïa ka ïor,\nKham lich ïa ka ior;\nSait ïa nga ha snam Khunlangbrot,\nNgan khan lich tarn ban ia ka ior."
+  },
+  {
+    "id": "kper-itynnad-ka-jingduwai",
+    "title": "Kper Itynnad Ka Jingduwai",
+    "number": 127,
+    "verses": [
+      "1. Don ka kper ha kaba Jisu u ap.\nU hukum ban wan ïashem hangta:\nBan dem ban nguh ban pdiang ki jingkyrkhu.\nHa kper ba i-tynnad ka jingdwai.",
+      "2. Don ka kper ha kaba Jisu u ap,\nNga leit ha u lem bad jingkhuslai;\nBan sngew ïa ki ktien jingpyntngen jong u,\nHa kata ka kper jong ka jingdwai.",
+      "3. Jaka baphylla ba i-tynnad;\nKa phyrnai da jingshai ka khmat jong u,\nKa dei ka kper jingdwai-i-tynnad."
+    ],
+    "chorus": "O! ka kper ba i-tynnad jong ka jingduwai,\nO! kper i-tynnad kper jingduwai;\nHangta u Nongpynim, u ap bad plie khyrdop,\nHa kper i-tynnad jong ka jingdwai."
+  },
+  {
+    "id": "jingkmen-wan-man-ka-step",
+    "title": "Jingkmen Wan Man Ka Step",
+    "number": 128,
+    "verses": [
+      "1. Nongïaid riewblei bathait to khmied,\nJingkmen ka wan hi man ka step;\nNamar Blei ïa ngi u la jied,\nJingkmen ka wan hi man ka step.",
+      "2. Riewkhuid batieng bad ba khynñiuh,\nJingkmen ka wan hi man ka step;\nPhi kiba khaw-eit batieng ruh,\nJingkmen ka wan hi man ka step.",
+      "3. To kmen haba miet ka leit noh,\nJingkmen ka wan hi man ka step;\nPor aïom ot ngin kmen baroh,\nJingkmen ka wan hi man ka step.",
+      "4. Ai ba baroh ngin kmen kyrhai,\nJingkmen ka wan hi man ka step;\nUmmat jong ngi un ñiad u Trai,\nJingkmen ka wan hi man ka step."
+    ],
+    "chorus": "Jingkmen ka wan man ka step, (2)\nJingïam ka lah ban sah tang shipor,\nJingkmen ka wan man ka step."
+  },
+  {
+    "id": "mynta-nga-la-oh-baroh",
+    "title": "Mynta Nga La Ïoh Baroh",
+    "number": 129,
+    "verses": [
+      "1. Ngam don ei ei tang jingpyrkhat khuslai,\nNga la wad spah bad burom ban ïoh;\nNgam don ei ei tang jingjynjar kyrhai,\nMynta nga la ïoh baroh.",
+      "2. Nga thmu ban leh kambah namar lawei.\nNga la im jingim ba pynsep ei;\nKumta nga dwai jingim babha ban leh.\nMynta nga la ïoh baroh."
+    ],
+    "chorus": "Nga la ïoh baroh khoit ki jingdonkam jong nga,\nNga don u Trai ban kdew ka lynti;\nU la map bad u ai jingim ïa nga,\nMynta nga la ïoh baroh."
+  },
+  {
+    "id": "kam-dei-lynti-ba-suk",
+    "title": "Kam Dei Lynti Ba Suk",
+    "number": 130,
+    "verses": [
+      "1. Kam dei lynti basuk haba ïaid ka lynti bneng,\nNamar bun jingpynwit ha lynti;\nKam dei lynti basuk, hynrei u don lem bad ngi,\nU ai jingkmen ïa ngi man ka sngi.",
+      "2. Kam dei lynti basuk, don jingeh bad jingtynjuh,\nBad bun jingma ba ngin ïa kynduh;\nHynrei u Trai un da na ki jingma ruh un ri,\nBad un pynjem lynti ïaid jong ngi.",
+      "3. Bunsien ki kjat ki pang bad sngew sakhrai haba ïaid,\nBunsien la jan kyllon ba sngewthait;\nKa sngi khambha kan poi ynda poi îng ka burom,\nNgin ïoh ban shongthait hangta jiwnom."
+    ],
+    "chorus": "Em, em kam dei lynti basuk, (2)\nJisu un ïaid ryngkat bad un pynshai ka lynti,\nBan pynjem jingkit bakhia jong ngi."
+  },
+  {
+    "id": "kumba-nga-long",
+    "title": "Kumba Nga Long",
+    "number": 131,
+    "verses": [
+      "1. Kumba nga long uba suda,\nEi ei ngam don A! Blei jong nga;\nHynrei namar me khot ïa nga,\nKo Khun u Blei, nga wan! nga wan!",
+      "2. Kumba nga long ngan ym pynslem,\nNga wan ban lait na jinglong rem;\nSnam jong me kan pynkhuid pyntlem,\nKo Khun u Blei, nga wan! nga wan!",
+      "3. Kumba nga long la pynshad ruh,\nHa kiba bun ki jingtynjuh;\nKiba napoh nabar kumjuh,\nKo Khun u Blei, nga wan! nga wan!",
+      "4. Kumba nga long baduk bajot,\nUba pop bad ba shem lanot;\nHa me ai ngan lait na jingjot,\nKo Khun u Blei, nga wan! nga wan!",
+      "5. Kumba nga long. A! map ïa nga,\nIsnei to sait ki pop jong nga;\nHa me ngan ngeit ko Trai jong nga,\nKo Khun u Blei, nga wan! nga wan!"
+    ]
+  },
+  {
+    "id": "kynrad-sngew-a-jingduwai",
+    "title": "Kynrad Sngew Ïa Jingduwai",
+    "number": 132,
+    "verses": [
+      "1. Trai to pyndonkam ki kti jong nga,\nTrai shim ki kjat ba ngan ïaid bad me;\nTrai shyntur pyndonkam ba ngan kren,\nBarabor tang ïa ka ktien jong me.",
+      "2. Kynrad pynkhuid ïa ka pop jong nga,\nSynshar nabar bad hapoh jong nga;\nPynduh ïa ka dohnud eh jong nga,\nKatba me mon pyndonkam ïa nga.",
+      "3. Kynrad ïa ka mon jong me ngan leh,\nHa jingim ne jingiap ngan ïaineh;\nNgan sa leit sha bneng ban shong bad me,\nNgan shong suk hapoh jingieit jong me."
+    ],
+    "chorus": "Kynrad sngew ïa ka jingdwai jong nga,\nBan ieit, ban kitkhia, ïarap ïa nga;\nPyndap d'u Mynsiem ba ngan ïohi,\nNongpop ki jot bad ïap man ka sngi."
+  },
+  {
+    "id": "wat-dem-ha-jingpynshoi",
+    "title": "Wat Dem Ha Jingpynshoi",
+    "number": 133,
+    "verses": [
+      "1. Wat dem ha jingpynshoi namar long ka pop,\nJingjop jong phi kan ïarap kiwei ban jop;\nTur shaphrang khlem sheptieng un ïada un ri,\nPeit brabor sh' u Jisu, un ïalam beit ïa phi.",
+      "2. Iehnoh ki lok basniew, ki ktien sniew kumjuh,\nKyrteng Blei to sheptieng, wat kren thala shuh;\nTo long kiba kohnguh, ba sbun ba shisha,\nPeit brabor sh'u Jisu, un ïalam beit ïa phi.",
+      "3. Ha uta uba jop, ka pansngiat un ai.\nDa jingngeit ngin sa jop, un ïarap u Trai;\nU Nongpynim jong ngi, bor un pynthymmai,\nPeit brabor sh' u Jisu, un ïalam beit ïa phi."
+    ],
+    "chorus": "Pan jingïarap Nongpynim,\nJingtngen ka bor ruh un ai;\nU mon ban ïarap ïa phi,\nUn ïalam beit ïa phi."
+  },
+  {
+    "id": "ummat-bajaw-blei-u-sngewthuh",
+    "title": "Ummat Bajaw Blei U Sngewthuh",
+    "number": 134,
+    "verses": [
+      "1. Bunsien phi sngew phylla balei ummat ki jaw,\nBad ki jingkit bakhia kiba ngim lah shah shuh;\nU Trai u don hajan u i ummat ba jaw,\nKi ummat bajaw Blei u sngewthuh.",
+      "2. Haba jynjar ki wan, sdang ban jaw ki ummat,\nKiei kiei kim long shuh kumba ngi pyrkhat;\nHynrei um klet ïa phi, bad u la kular ruh,\nKi ummat bajaw, Blei u sngewthuh."
+    ],
+    "chorus": "U i ummat jong ki dohnud ba la pait,\nU i ummat u sngew ba ki jaw ruh:\nBlei u ïam bad u briew, u bat da la ka kti.\nKi ummat ba jaw, Blei u sngewthuh."
+  },
+  {
+    "id": "jisu-me-eit-a-nga",
+    "title": "Jisu Me Ïeit Ïa Nga",
+    "number": 135,
+    "verses": [
+      "1. Ym don thylliej ba lah batai, Jisu u ïeit ïa nga,\nNgam lah pyrkhat, ngam lah mutdur, katno u ïeit ia nga.\nKatno u shah, kumno u sngap, u iap namar jong nga,\nU shah lehbeiň naduh dangkha haduh halor diengphna.",
+      "2. Myrsiang ki don ki thliew, sim bneng ki don ka jaka rieh.\nHynrei u khun u briew um don jaka ban buh ka khlieh:\nBan siew khajna um don, pisa u ïoh na u dohkha,\nSawphew sngi u shah thngan ha khlaw naba u ieit ia nga.",
+      "3. Lada phi ieit ïa nga u ong \"sumar hukum jong nga.\" \nKup jingsngewrit, kup jingluilui kum khynnah rit nylla;\nTo phin ïa ieit, to phin ïa map, ïa pynrit shipara,\nLada nga kohnguh sngur kumta, ha bneng ngan don jaka.",
+      "4. Kajingsarong, jingsngew-riewblei bad jingsngew tang ma nga,\nKa jingbishni, ka jingarsap bad jingieit sbai thala:\nYm tang kine ngam lah ban ñiew, ki bud ki ap ïa nga,\nŤarap ïa nga Jisu baieit, shongsah hapoh jong nga."
+    ],
+    "chorus": "A! Jisu, Jisu Jisu Jisu baieit eh jong nga,\nA! Jisu, Jisu bathiang tam hapoh mynsiem jong nga;\nA! Jisu, Jisu kordor eh hapoh jingim jong nga.\nMe ieit ia nga, me shah sngewbha halor jong ka diengphna."
+  },
+  {
+    "id": "u-im",
+    "title": "U Im",
+    "number": 136,
+    "verses": [
+      "1. Nga shakri ľu Nongpynim,\nU don bad nga mynta;\nNga tip u im la ki briew,\nKi kren sniew ne kren bha.\nNga ïohi jingsbun jong u.\nNga sngew ka sur ka wan;\nHaba nga donkam ïa u,\nU don hajan.",
+      "2. Ha baroh sawdong ïa nga,\nNga i jingsumar ieit;\nLa dohnud jong nga ka thait,\nNgan nym sngewtieng sngewsmiej.\nNga tip ba u ïalam,\nLyngba ka ïa-ïong ïa-ngit;\nJingmihpaw jong u khatduh,\nKan wan kyndit.",
+      "3. To kmen, to kmen ko Khristan,\nPynjam, ka ktien bad rwai;\nJingkyrmen kiba wad,\nKiba shem un rap un da;\nYm don kiwei pat kiba,\nKham sbun kham bha."
+    ],
+    "chorus": "U im! u im! nga tip u Khrist u im!\nU ïaid bad nga u kren bad nga.\nLynter lynti bakhim.\nU im! u im! bad un ai jingpynim,\nHalleliwia jiwnom jiwnom,\nI'u Jisu u Trai."
+  },
+  {
+    "id": "trai-jisu-arap-a-nga",
+    "title": "Trai Jisu Ïarap Ïa Nga",
+    "number": 137,
+    "verses": [
+      "1. Trai Jisu, Nongsiewspah baieit eh jong nga.\nNga wan dem ha ki kjat jong me Trai mynta;\nNga la iehnoh ïa ki pop bad jingthala,\nBad ïa ki jingsngewbha jong ka baroh khoit.",
+      "2. Trai, ïarap ba ngan ïatrei lem bad me hi,\nBa ngan khring sha me ïa ki nongpop bapli;\nNgan im kumta ba jingim kan ring ïa ki,\nBad da lei-lei ruh ïa ki nga nym pynthut.",
+      "3. Trai Jisu, ïarap ba ngan long uba bha,\nBa ïaishah, ba jemnud bad uba sbun bha;\nKumba nga kwah ba kiwei kin leh ïa nga,\nJisu, ai ba ngan leh shwa ma nga ha ki.",
+      "4. Trai Jisu, ïarap ïa nga ba ngan ïaineh,\nNgan nym dem h'u nongshun, hynrei ngan ïaleh;\nBad ynda khot ïa nga sha ki ïng shongneh.\nO! ba nga lah ba ngan long uba la kloi."
+    ],
+    "chorus": "Ïarap ïa nga, ïarap ia nga,\nBa ngan long kumba\nMe kwah ïa nga ban long.\nÏarap ïa nga, ïarap ïa nga,\nBa ngan long kumba\nMe kwah ba ngan long."
   }
 ];
