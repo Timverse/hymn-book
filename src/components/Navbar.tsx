@@ -10,12 +10,12 @@ export default function Navbar() {
   const pathname = usePathname();
 
   const navLinks = [
-    { name: "Sla Kmie", href: "/", icon: Home },
-    { name: "Kdew Alphabet", href: "/indexes/alphabetical", icon: BookOpen },
-    { name: "Kdew Lynnong", href: "/indexes/topical", icon: Bookmark },
-    { name: "Ki Nongpynkylla", href: "/indexes/translators", icon: Users },
-    { name: "Ki Ba Jied", href: "/favorites", icon: Heart },
-    { name: "Shaphang", href: "/about", icon: Info },
+    { name: "Home", href: "/", icon: Home },
+    { name: "Alphabetical Index", href: "/indexes/alphabetical", icon: BookOpen },
+    { name: "Topical Index", href: "/indexes/topical", icon: Bookmark },
+    { name: "Translators", href: "/indexes/translators", icon: Users },
+    { name: "Favorites", href: "/favorites", icon: Heart },
+    { name: "About", href: "/about", icon: Info },
   ];
 
 
@@ -70,10 +70,10 @@ export default function Navbar() {
             <Link
               href="/?focus=search"
               className="flex items-center gap-2 bg-stone-100 hover:bg-stone-200/80 text-stone-600 hover:text-stone-900 px-4 py-2.5 rounded-full text-sm font-medium transition-all duration-200 border border-stone-200/60 shadow-xs focus:outline-none focus:ring-2 focus:ring-amber-600"
-              aria-label="Wad Jingrwai"
+              aria-label="Search Hymns"
             >
               <Search className="w-4 h-4 text-stone-500" />
-              <span className="hidden lg:inline">Wad Jingrwai...</span>
+              <span className="hidden lg:inline">Search Hymns...</span>
               <kbd className="hidden lg:inline-block px-2 py-0.5 text-xs font-mono bg-white border border-stone-300 rounded text-stone-500 shadow-2xs">
                 ⌘K
               </kbd>
