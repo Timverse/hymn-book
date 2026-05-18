@@ -27,19 +27,21 @@ export default function LyricsViewer({ verses, chorus }: LyricsViewerProps) {
   };
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-6 sm:space-y-8">
       {/* Customization Toolbar */}
-      <div className="bg-white border border-stone-200/80 rounded-2xl p-4 flex flex-wrap items-center justify-between gap-4 shadow-xs">
-        <div className="flex items-center gap-2">
-          <Type className="w-4 h-4 text-stone-400 hidden sm:block" />
-          <span className="text-xs font-semibold uppercase tracking-wider text-stone-500 mr-2">Saiz Dak:</span>
+      <div className="bg-white border border-stone-200/80 rounded-3xl p-4 sm:p-6 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-4 sm:gap-6 shadow-xs">
+        <div className="flex items-center justify-between sm:justify-start gap-2">
+          <div className="flex items-center gap-2">
+            <Type className="w-4 h-4 text-stone-400 hidden sm:block" />
+            <span className="text-xs font-semibold uppercase tracking-wider text-stone-500 mr-1 sm:mr-2">Saiz Dak:</span>
+          </div>
           <div className="flex items-center gap-1 bg-stone-100 p-1 rounded-xl">
             {(["sm", "base", "lg", "xl"] as const).map((size) => (
               <button
                 key={size}
                 type="button"
                 onClick={() => setFontSize(size)}
-                className={`px-3 py-1 rounded-lg text-xs font-medium transition-all ${
+                className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-all ${
                   fontSize === size ? "bg-white text-stone-900 shadow-xs font-bold" : "text-stone-600 hover:text-stone-900"
                 }`}
                 aria-label={`Pynkylla saiz dak sha ${size}`}
@@ -50,13 +52,13 @@ export default function LyricsViewer({ verses, chorus }: LyricsViewerProps) {
           </div>
         </div>
 
-        <div className="flex items-center gap-6">
+        <div className="flex flex-wrap items-center justify-between sm:justify-end gap-4 sm:gap-6">
           {/* Alignment */}
           <div className="flex items-center gap-1 bg-stone-100 p-1 rounded-xl">
             <button
               type="button"
               onClick={() => setAlignment("left")}
-              className={`p-1.5 rounded-lg transition-all ${
+              className={`p-2 rounded-lg transition-all ${
                 alignment === "left" ? "bg-white text-stone-900 shadow-xs" : "text-stone-600 hover:text-stone-900"
               }`}
               aria-label="Pynbeit sha kadiang"
@@ -66,7 +68,7 @@ export default function LyricsViewer({ verses, chorus }: LyricsViewerProps) {
             <button
               type="button"
               onClick={() => setAlignment("center")}
-              className={`p-1.5 rounded-lg transition-all ${
+              className={`p-2 rounded-lg transition-all ${
                 alignment === "center" ? "bg-white text-stone-900 shadow-xs" : "text-stone-600 hover:text-stone-900"
               }`}
               aria-label="Pynbeit sha pdeng"
@@ -76,11 +78,11 @@ export default function LyricsViewer({ verses, chorus }: LyricsViewerProps) {
           </div>
 
           {/* Theme */}
-          <div className="flex items-center gap-1 bg-stone-100 p-1 rounded-xl">
+          <div className="flex items-center gap-1 bg-stone-100 p-1 rounded-xl flex-1 sm:flex-initial justify-center">
             <button
               type="button"
               onClick={() => setTheme("light")}
-              className={`px-2.5 py-1 rounded-lg text-xs font-medium flex items-center gap-1 transition-all ${
+              className={`px-3 py-1.5 rounded-lg text-xs font-medium flex items-center gap-1.5 transition-all ${
                 theme === "light" ? "bg-white text-stone-900 shadow-xs font-bold" : "text-stone-600 hover:text-stone-900"
               }`}
               aria-label="Phngain theme"
@@ -90,7 +92,7 @@ export default function LyricsViewer({ verses, chorus }: LyricsViewerProps) {
             <button
               type="button"
               onClick={() => setTheme("sepia")}
-              className={`px-2.5 py-1 rounded-lg text-xs font-medium flex items-center gap-1 transition-all ${
+              className={`px-3 py-1.5 rounded-lg text-xs font-medium flex items-center gap-1.5 transition-all ${
                 theme === "sepia" ? "bg-amber-100 text-amber-950 shadow-xs font-bold" : "text-stone-600 hover:text-stone-900"
               }`}
               aria-label="Stem theme"
@@ -100,7 +102,7 @@ export default function LyricsViewer({ verses, chorus }: LyricsViewerProps) {
             <button
               type="button"
               onClick={() => setTheme("dark")}
-              className={`px-2.5 py-1 rounded-lg text-xs font-medium flex items-center gap-1 transition-all ${
+              className={`px-3 py-1.5 rounded-lg text-xs font-medium flex items-center gap-1.5 transition-all ${
                 theme === "dark" ? "bg-stone-800 text-white shadow-xs font-bold" : "text-stone-600 hover:text-stone-900"
               }`}
               aria-label="Dum theme"
@@ -112,8 +114,8 @@ export default function LyricsViewer({ verses, chorus }: LyricsViewerProps) {
       </div>
 
       {/* Lyrics Display */}
-      <div className={`border rounded-3xl p-8 md:p-12 transition-all duration-300 ${themeStyles[theme]}`}>
-        <div className={`font-serif max-w-3xl mx-auto space-y-10 ${alignment === "center" ? "text-center" : "text-left"}`}>
+      <div className={`border rounded-3xl p-6 sm:p-10 md:p-16 transition-all duration-300 ${themeStyles[theme]}`}>
+        <div className={`font-serif max-w-4xl mx-auto space-y-10 sm:space-y-12 ${alignment === "center" ? "text-center" : "text-left"}`}>
           {verses.map((verse, idx) => (
             <div key={idx} className="space-y-4 group">
               <span className="text-xs font-mono font-bold text-amber-700/80 uppercase tracking-widest block mb-2 select-none opacity-60 group-hover:opacity-100 transition-opacity">
@@ -126,7 +128,7 @@ export default function LyricsViewer({ verses, chorus }: LyricsViewerProps) {
           ))}
 
           {chorus && (
-            <div className="my-12 p-6 md:p-8 bg-amber-50/40 border-y border-amber-200/60 rounded-2xl space-y-4 group">
+            <div className="my-14 p-6 sm:p-10 bg-amber-50/40 border-y border-amber-200/60 rounded-3xl space-y-4 group">
               <span className="text-xs font-mono font-bold text-amber-800 uppercase tracking-widest block mb-2 select-none">
                 Korus
               </span>

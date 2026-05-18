@@ -53,18 +53,18 @@ export default function HymnCard({ hymn, onFavoriteChange }: HymnCardProps) {
   return (
     <Link
       href={`/hymn/${hymn.id}`}
-      className="group relative flex flex-col bg-white rounded-2xl border border-stone-200/80 p-6 shadow-xs hover:shadow-lg hover:border-amber-600/40 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-amber-600 focus:ring-offset-2"
+      className="group relative flex flex-col bg-white rounded-3xl border border-stone-200/80 p-6 sm:p-8 shadow-xs hover:shadow-xl hover:border-amber-600/40 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-amber-600 focus:ring-offset-2"
       aria-label={`Peit ia ka jingrwai ${hymn.number}: ${hymn.title}`}
     >
       {/* Top Bar: Number & Favorite Button */}
-      <div className="flex items-center justify-between mb-4">
-        <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-stone-100 text-stone-700 font-mono text-xs font-bold tracking-wider group-hover:bg-amber-100 group-hover:text-amber-900 transition-colors">
-          <Bookmark className="w-3 h-3 text-amber-700" /> #{hymn.number}
+      <div className="flex items-center justify-between mb-4 sm:mb-5 gap-2">
+        <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-stone-100 text-stone-700 font-mono text-xs sm:text-sm font-bold tracking-wider group-hover:bg-amber-100 group-hover:text-amber-900 transition-colors shadow-2xs">
+          <Bookmark className="w-3.5 h-3.5 text-amber-700 flex-shrink-0" /> #{hymn.number}
         </span>
         <button
           type="button"
           onClick={toggleFavorite}
-          className="p-2 rounded-full hover:bg-stone-100 text-stone-400 hover:text-red-600 transition-colors focus:outline-none focus:ring-2 focus:ring-amber-600"
+          className="p-2.5 rounded-full hover:bg-stone-100 text-stone-400 hover:text-red-600 transition-colors focus:outline-none focus:ring-2 focus:ring-amber-600 flex-shrink-0"
           aria-label={isFavorite ? `Weng ia ${hymn.title} na ki ba jied` : `Buh ia ${hymn.title} ha ki ba jied`}
           aria-pressed={isFavorite}
         >
@@ -73,21 +73,21 @@ export default function HymnCard({ hymn, onFavoriteChange }: HymnCardProps) {
       </div>
 
       {/* Hymn Title */}
-      <div className="mb-3 space-y-1">
-        <h3 className="font-serif text-xl font-bold text-stone-900 group-hover:text-amber-900 transition-colors line-clamp-1 pt-1">
+      <div className="mb-4 space-y-1">
+        <h3 className="font-serif text-xl sm:text-2xl font-bold text-stone-900 group-hover:text-amber-900 transition-colors line-clamp-2 pt-1 leading-snug">
           {hymn.title}
         </h3>
       </div>
 
       {/* Verse Snippet */}
-      <p className="text-stone-600 text-sm leading-relaxed mb-6 line-clamp-2 flex-1 font-serif italic">
+      <p className="text-stone-600 text-sm sm:text-base leading-relaxed mb-8 line-clamp-2 flex-1 font-serif italic">
         &ldquo;{firstVerseSnippet}...&rdquo;
       </p>
 
       {/* Bottom Bar: Action Link */}
-      <div className="mt-auto pt-4 border-t border-stone-100 flex items-center justify-end text-xs text-stone-500">
-        <span className="flex items-center gap-1 font-semibold text-amber-800 group-hover:translate-x-1 transition-transform duration-200">
-          Peit Ki Kyntien <ArrowRight className="w-3.5 h-3.5" />
+      <div className="mt-auto pt-4 border-t border-stone-100 flex items-center justify-end text-xs sm:text-sm text-stone-500">
+        <span className="flex items-center gap-1.5 font-semibold text-amber-800 group-hover:translate-x-1 transition-transform duration-200">
+          Peit Ki Kyntien <ArrowRight className="w-4 h-4 flex-shrink-0" />
         </span>
       </div>
     </Link>

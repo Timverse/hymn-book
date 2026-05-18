@@ -576,14 +576,14 @@ export default function AlphabeticalIndexPage() {
   }, [searchQuery]);
 
   return (
-    <div className="flex-1 flex flex-col w-full bg-[#FAF9F6] py-12 md:py-16">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full space-y-10">
+    <div className="flex-1 flex flex-col w-full bg-[#FAF9F6] py-12 sm:py-16 md:py-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12 w-full space-y-10 sm:space-y-14">
         {/* Header */}
-        <div className="space-y-4 animate-fadeIn">
-          <h1 className="font-serif text-4xl sm:text-5xl font-bold text-stone-900 tracking-tight">
+        <div className="space-y-4 animate-fadeIn px-2">
+          <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-stone-900 tracking-tight leading-[1.15]">
             Kdew Alphabet (Alphabetical Index)
           </h1>
-          <p className="text-stone-600 text-lg max-w-2xl leading-relaxed">
+          <p className="text-stone-600 text-base sm:text-lg max-w-2xl leading-relaxed">
             Wad ia ki jingrwai mane Blei da ki dak ba sdang jong ka kyrteng, pynbeit da ki nombor jingrwai ba shisha.
           </p>
         </div>
@@ -592,39 +592,39 @@ export default function AlphabeticalIndexPage() {
         <IndexTabs />
 
         {/* Filter Input */}
-        <div className="max-w-md relative animate-fadeIn">
-          <Search className="w-5 h-5 text-stone-400 absolute left-4 top-1/2 -translate-y-1/2" />
+        <div className="max-w-md relative animate-fadeIn w-full px-2 sm:px-0">
+          <Search className="w-5 h-5 text-stone-400 absolute left-6 sm:left-4 top-1/2 -translate-y-1/2" />
           <input
             type="text"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             placeholder="Wad kyrteng ne nombor..."
-            className="w-full pl-12 pr-4 py-3 rounded-full border border-stone-200/80 bg-white text-stone-900 placeholder:text-stone-400 text-sm focus:outline-none focus:ring-2 focus:ring-amber-600 focus:border-transparent transition-all shadow-2xs"
+            className="w-full pl-14 sm:pl-12 pr-4 py-3.5 sm:py-3 rounded-full border border-stone-200/80 bg-white text-stone-900 placeholder:text-stone-400 text-sm focus:outline-none focus:ring-2 focus:ring-amber-600 focus:border-transparent transition-all shadow-2xs"
           />
         </div>
 
         {/* Content */}
         {filteredData.length > 0 ? (
-          <div className="space-y-12 animate-fadeIn">
+          <div className="space-y-14 sm:space-y-16 animate-fadeIn">
             {filteredData.map((group) => (
-              <section key={group.letter} className="space-y-6">
-                <div className="flex items-center gap-4 border-b border-stone-200/80 pb-2">
-                  <h2 className="font-serif text-3xl font-bold text-amber-900">{group.letter}</h2>
-                  <span className="text-xs font-sans font-medium px-2.5 py-0.5 rounded-full bg-amber-100 text-amber-800">
+              <section key={group.letter} className="space-y-6 sm:space-y-8">
+                <div className="flex items-center gap-4 border-b border-stone-200/80 pb-3 px-2 sm:px-0">
+                  <h2 className="font-serif text-3xl sm:text-4xl font-bold text-amber-900">{group.letter}</h2>
+                  <span className="text-xs sm:text-sm font-sans font-medium px-3 py-1 rounded-full bg-amber-100 text-amber-800 shadow-2xs">
                     {group.songs.length} {group.songs.length === 1 ? "Jingrwai" : "Jingrwai"}
                   </span>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
                   {group.songs.map((song) => {
                     const hymnId = map.get(song.number);
                     const CardContent = (
-                      <div className="flex items-center justify-between p-4 rounded-2xl bg-white border border-stone-200/80 hover:border-amber-600/50 hover:shadow-md transition-all duration-200 group">
-                        <div className="flex items-center gap-3 overflow-hidden">
-                          <span className="flex-shrink-0 w-10 h-10 rounded-xl bg-stone-100 group-hover:bg-amber-50 text-stone-700 group-hover:text-amber-800 font-bold text-sm flex items-center justify-center transition-colors shadow-2xs">
+                      <div className="flex items-center justify-between p-4 sm:p-5 rounded-3xl bg-white border border-stone-200/80 hover:border-amber-600/50 hover:shadow-md transition-all duration-200 group">
+                        <div className="flex items-center gap-3.5 overflow-hidden">
+                          <span className="flex-shrink-0 w-11 h-11 rounded-2xl bg-stone-100 group-hover:bg-amber-50 text-stone-700 group-hover:text-amber-800 font-bold text-sm sm:text-base flex items-center justify-center transition-colors shadow-2xs">
                             {song.number}
                           </span>
-                          <span className="font-serif font-semibold text-stone-900 group-hover:text-amber-900 text-base truncate transition-colors">
+                          <span className="font-serif font-semibold text-stone-900 group-hover:text-amber-900 text-base sm:text-lg truncate transition-colors">
                             {song.title}
                           </span>
                         </div>
@@ -633,7 +633,7 @@ export default function AlphabeticalIndexPage() {
                     );
 
                     return hymnId ? (
-                      <Link key={song.number} href={`/hymn/${hymnId}`} className="focus:outline-none focus:ring-2 focus:ring-amber-600 rounded-2xl block">
+                      <Link key={song.number} href={`/hymn/${hymnId}`} className="focus:outline-none focus:ring-2 focus:ring-amber-600 rounded-3xl block">
                         {CardContent}
                       </Link>
                     ) : (
@@ -647,15 +647,15 @@ export default function AlphabeticalIndexPage() {
             ))}
           </div>
         ) : (
-          <div className="bg-white border border-stone-200/80 rounded-3xl p-12 text-center max-w-lg mx-auto space-y-4 shadow-xs animate-fadeIn">
-            <h3 className="font-serif text-xl font-bold text-stone-900">Ym Shem Jingrwai</h3>
-            <p className="text-stone-500 text-sm leading-relaxed">
+          <div className="bg-white border border-stone-200/80 rounded-3xl p-8 sm:p-12 md:p-16 text-center max-w-lg mx-auto space-y-4 shadow-xs animate-fadeIn">
+            <h3 className="font-serif text-xl sm:text-2xl font-bold text-stone-900">Ym Shem Jingrwai</h3>
+            <p className="text-stone-500 text-sm sm:text-base leading-relaxed">
               Ngi ym shym la shem jingrwai ba iadei bad &ldquo;<strong className="text-stone-800">{searchQuery}</strong>&rdquo;.
             </p>
             <button
               type="button"
               onClick={() => setSearchQuery("")}
-              className="mt-2 px-6 py-2.5 bg-stone-900 text-white rounded-full text-sm font-medium hover:bg-stone-800 transition-colors shadow-xs"
+              className="mt-4 px-8 py-3 bg-stone-900 text-white rounded-full text-sm font-medium hover:bg-stone-800 transition-colors shadow-md"
             >
               Wad Biang
             </button>

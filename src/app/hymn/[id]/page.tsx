@@ -43,26 +43,26 @@ export default async function HymnDetailPage({ params }: Props) {
   }
 
   return (
-    <div className="flex-1 w-full max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-16 space-y-12">
+    <div className="flex-1 w-full max-w-6xl mx-auto px-4 sm:px-8 lg:px-12 py-12 md:py-20 space-y-12 sm:space-y-16">
       {/* Top Navigation & Actions */}
-      <div className="flex items-center justify-between border-b border-stone-200/80 pb-6">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between border-b border-stone-200/80 pb-6 gap-4 sm:gap-0">
         <Link
           href="/"
           className="inline-flex items-center gap-2 text-sm font-medium text-stone-600 hover:text-stone-900 transition-colors group p-1"
         >
           <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
-          <span>Kynran Sha Ki Jingrwai</span>
+          <span>Back to Hymns</span>
         </Link>
-        <div className="flex items-center gap-3">
-          <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-amber-50 border border-amber-200/60 text-amber-800 font-mono text-xs font-bold tracking-wider shadow-2xs">
-            <Bookmark className="w-3.5 h-3.5 text-amber-700" /> #{hymn.number}
+        <div className="flex items-center gap-3 self-start sm:self-auto">
+          <span className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-amber-50 border border-amber-200/60 text-amber-800 font-mono text-xs sm:text-sm font-bold tracking-wider shadow-2xs">
+            <Bookmark className="w-3.5 h-3.5 text-amber-700 flex-shrink-0" /> #{hymn.number}
           </span>
         </div>
       </div>
 
       {/* Hymn Header */}
-      <header className="space-y-4 text-center max-w-3xl mx-auto">
-        <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl font-extrabold text-stone-900 tracking-tight pt-2">
+      <header className="space-y-4 text-center max-w-4xl mx-auto px-2">
+        <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-stone-900 tracking-tight pt-2 leading-[1.15]">
           {hymn.title}
         </h1>
       </header>
