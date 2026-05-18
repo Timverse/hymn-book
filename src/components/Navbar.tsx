@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { BookOpen, Search, Heart, Menu, X, Info, Home } from "lucide-react";
+import { BookOpen, Search, Heart, Menu, X, Info, Home, Bookmark, Users } from "lucide-react";
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -11,9 +11,13 @@ export default function Navbar() {
 
   const navLinks = [
     { name: "Sla Kmie", href: "/", icon: Home },
+    { name: "Kdew Alphabet", href: "/indexes/alphabetical", icon: BookOpen },
+    { name: "Kdew Lynnong", href: "/indexes/topical", icon: Bookmark },
+    { name: "Ki Nongpynkylla", href: "/indexes/translators", icon: Users },
     { name: "Ki Ba Jied", href: "/favorites", icon: Heart },
     { name: "Shaphang", href: "/about", icon: Info },
   ];
+
 
   return (
     <header className="sticky top-0 z-50 bg-[#FAF9F6]/85 backdrop-blur-md border-b border-stone-200/80 transition-all duration-300">

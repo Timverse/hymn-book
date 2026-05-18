@@ -24,11 +24,31 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div className="space-y-4">
-            <h3 className="font-serif font-semibold text-stone-900 text-lg tracking-wide">Wad</h3>
+            <h3 className="font-serif font-semibold text-stone-900 text-lg tracking-wide">Wad & Kdew</h3>
             <ul className="space-y-2.5 text-sm" aria-label="Footer Navigation">
               <li>
                 <Link href="/" className="hover:text-amber-800 transition-colors inline-flex items-center gap-1 group">
                   Sla Kmie <ArrowUpRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
+                </Link>
+              </li>
+              <li>
+                <Link href="/indexes/alphabetical" className="hover:text-amber-800 transition-colors inline-flex items-center gap-1 group">
+                  Kdew Alphabet <ArrowUpRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
+                </Link>
+              </li>
+              <li>
+                <Link href="/indexes/topical" className="hover:text-amber-800 transition-colors inline-flex items-center gap-1 group">
+                  Kdew Lynnong <ArrowUpRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
+                </Link>
+              </li>
+              <li>
+                <Link href="/indexes/translators" className="hover:text-amber-800 transition-colors inline-flex items-center gap-1 group">
+                  Ki Nongpynkylla <ArrowUpRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
+                </Link>
+              </li>
+              <li>
+                <Link href="/indexes/credits" className="hover:text-amber-800 transition-colors inline-flex items-center gap-1 group">
+                  Ki Nongshna <ArrowUpRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
                 </Link>
               </li>
               <li>
@@ -58,6 +78,9 @@ export default function Footer() {
         <div className="mt-16 pt-8 border-t border-stone-200/80 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-stone-500">
           <p>© {new Date().getFullYear()} Ka Kot Jingrwai - Balang U Khrist. Baroh ki hok la pynneh.</p>
           <div className="flex items-center gap-6">
+            <Link href="/indexes/credits" className="hover:text-stone-800 transition-colors font-medium text-amber-900">
+              Developed by Eddie
+            </Link>
             <Link href="/about" className="hover:text-stone-800 transition-colors">Ki Riti Treikam</Link>
             <Link href="/about" className="hover:text-stone-800 transition-colors">Ki Kyndon</Link>
             <span className="flex items-center gap-1">
