@@ -14,15 +14,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const resolvedParams = await params;
   const hymn = HYMNS.find((h) => h.id === resolvedParams.id);
   if (!hymn) {
-    return { title: "Hymn Not Found | Canticle Archive" };
+    return { title: "Ym Shem Jingrwai | Ka Kot Jingrwai" };
   }
   return {
-    title: `${hymn.title} (Hymn #${hymn.number}) | Canticle Archive`,
-    description: `Full lyrics for ${hymn.title} (Hymn #${hymn.number}).`,
-    keywords: [hymn.title, "hymn lyrics", "worship", "christian music"],
+    title: `${hymn.title} (Jingrwai #${hymn.number}) | Ka Kot Jingrwai`,
+    description: `Ki kyntien ba pura jong ka ${hymn.title} (Jingrwai #${hymn.number}).`,
+    keywords: [hymn.title, "jingrwai", "balang u khrist", "khasi hymns", "worship"],
     openGraph: {
-      title: `${hymn.title} - Hymn #${hymn.number}`,
-      description: `Read the lyrics for ${hymn.title}.`,
+      title: `${hymn.title} - Jingrwai #${hymn.number}`,
+      description: `Pule ia ki kyntien jong ka ${hymn.title}.`,
       type: "article",
     },
   };
@@ -51,7 +51,7 @@ export default async function HymnDetailPage({ params }: Props) {
           className="inline-flex items-center gap-2 text-sm font-medium text-stone-600 hover:text-stone-900 transition-colors group p-1"
         >
           <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
-          <span>Back to Hymnal Catalog</span>
+          <span>Kynran Sha Ki Jingrwai</span>
         </Link>
         <div className="flex items-center gap-3">
           <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-amber-50 border border-amber-200/60 text-amber-800 font-mono text-xs font-bold tracking-wider shadow-2xs">

@@ -10,9 +10,9 @@ export default function Navbar() {
   const pathname = usePathname();
 
   const navLinks = [
-    { name: "Home", href: "/", icon: Home },
-    { name: "Favorites", href: "/favorites", icon: Heart },
-    { name: "About", href: "/about", icon: Info },
+    { name: "Sla Kmie", href: "/", icon: Home },
+    { name: "Ki Ba Jied", href: "/favorites", icon: Heart },
+    { name: "Shaphang", href: "/about", icon: Info },
   ];
 
   return (
@@ -23,17 +23,17 @@ export default function Navbar() {
           <Link 
             href="/" 
             className="flex items-center gap-3 group focus:outline-none focus:ring-2 focus:ring-amber-600 focus:ring-offset-2 rounded-lg p-1"
-            aria-label="Canticle Hymnal Home"
+            aria-label="Ka Kot Jingrwai Home"
           >
             <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-amber-700 to-amber-900 flex items-center justify-center text-white shadow-md shadow-amber-900/10 group-hover:scale-105 transition-transform duration-300">
               <BookOpen className="w-5 h-5 animate-pulse" />
             </div>
             <div className="flex flex-col">
               <span className="font-serif text-2xl font-bold tracking-tight text-stone-900 group-hover:text-amber-800 transition-colors">
-                Canticle<span className="text-amber-700">.</span>
+                Ka Kot Jingrwai<span className="text-amber-700">.</span>
               </span>
               <span className="text-[10px] uppercase tracking-widest text-stone-500 font-medium -mt-1">
-                Sacred Hymnal
+                Balang U Khrist
               </span>
             </div>
           </Link>
@@ -66,10 +66,10 @@ export default function Navbar() {
             <Link
               href="/?focus=search"
               className="flex items-center gap-2 bg-stone-100 hover:bg-stone-200/80 text-stone-600 hover:text-stone-900 px-4 py-2.5 rounded-full text-sm font-medium transition-all duration-200 border border-stone-200/60 shadow-xs focus:outline-none focus:ring-2 focus:ring-amber-600"
-              aria-label="Search Hymns"
+              aria-label="Wad Jingrwai"
             >
               <Search className="w-4 h-4 text-stone-500" />
-              <span className="hidden lg:inline">Search Hymns...</span>
+              <span className="hidden lg:inline">Wad Jingrwai...</span>
               <kbd className="hidden lg:inline-block px-2 py-0.5 text-xs font-mono bg-white border border-stone-300 rounded text-stone-500 shadow-2xs">
                 ⌘K
               </kbd>

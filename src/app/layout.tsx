@@ -17,16 +17,16 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Canticle | Professional Hymn & Worship Archive",
-  description: "A beautifully curated, elegant, and modern digital hymnal featuring timeless Christian hymns, full lyrics, scripture references, and peaceful audio playback.",
-  keywords: ["hymns", "worship", "christian lyrics", "digital hymnal", "sheet music", "gospel", "praise", "church music"],
-  authors: [{ name: "Canticle Archive" }],
+  title: "Ka Kot Jingrwai | Balang U Khrist",
+  description: "Ka kot jingrwai ba la pynkhreh pynjanai na bynta ka jingmane bad jingiaroh ia U Blei.",
+  keywords: ["jingrwai", "balang u khrist", "khasi hymns", "kot jingrwai", "jingmane", "khasi christian hymns"],
+  authors: [{ name: "Balang U Khrist" }],
   openGraph: {
-    title: "Canticle | Professional Hymn & Worship Archive",
-    description: "Explore timeless Christian hymns with beautiful typography, full lyrics, and peaceful audio playback.",
+    title: "Ka Kot Jingrwai | Balang U Khrist",
+    description: "Ka kot jingrwai ba la pynkhreh pynjanai na bynta ka jingmane bad jingiaroh ia U Blei.",
     type: "website",
     locale: "en_US",
-    siteName: "Canticle Hymnal",
+    siteName: "Ka Kot Jingrwai",
   },
   robots: {
     index: true,

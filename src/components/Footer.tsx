@@ -9,40 +9,36 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 lg:gap-8">
           {/* Brand & Mission */}
           <div className="md:col-span-2 space-y-4">
-            <Link href="/" className="flex items-center gap-3 group inline-flex" aria-label="Canticle Home">
+            <Link href="/" className="flex items-center gap-3 group inline-flex" aria-label="Ka Kot Jingrwai Home">
               <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-amber-700 to-amber-900 flex items-center justify-center text-white shadow-md shadow-amber-900/10 group-hover:scale-105 transition-transform duration-300">
                 <BookOpen className="w-4 h-4" />
               </div>
               <span className="font-serif text-2xl font-bold tracking-tight text-stone-900 group-hover:text-amber-800 transition-colors">
-                Canticle<span className="text-amber-700">.</span>
+                Ka Kot Jingrwai<span className="text-amber-700">.</span>
               </span>
             </Link>
             <p className="text-stone-600 text-sm md:text-base leading-relaxed max-w-md">
-              A beautifully curated digital hymnal dedicated to preserving timeless Christian hymns. Crafted with elegance and readability to enrich your personal and communal worship.
+              Ka kot jingrwai ba la pynkhreh pynjanai ban pynneh pynsah ia ki jingrwai mane Blei. La shna kyrpang na bynta ka jingmane shimet bad ka jingmane balang.
             </p>
-            <div className="pt-2 flex items-center gap-2 text-xs text-stone-500 bg-stone-200/60 px-3 py-2 rounded-lg w-fit">
-              <span className="w-2 h-2 rounded-full bg-emerald-600 animate-pulse"></span>
-              <span>Fully Optimized & Fast Loading (Under 2s)</span>
-            </div>
           </div>
 
           {/* Quick Links */}
           <div className="space-y-4">
-            <h3 className="font-serif font-semibold text-stone-900 text-lg tracking-wide">Explore</h3>
+            <h3 className="font-serif font-semibold text-stone-900 text-lg tracking-wide">Wad</h3>
             <ul className="space-y-2.5 text-sm" aria-label="Footer Navigation">
               <li>
                 <Link href="/" className="hover:text-amber-800 transition-colors inline-flex items-center gap-1 group">
-                  Home <ArrowUpRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
+                  Sla Kmie <ArrowUpRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
                 </Link>
               </li>
               <li>
                 <Link href="/favorites" className="hover:text-amber-800 transition-colors inline-flex items-center gap-1 group">
-                  Favorites <ArrowUpRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
+                  Ki Ba Jied <ArrowUpRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
                 </Link>
               </li>
               <li>
                 <Link href="/about" className="hover:text-amber-800 transition-colors inline-flex items-center gap-1 group">
-                  About Us <ArrowUpRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
+                  Shaphang <ArrowUpRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
                 </Link>
               </li>
             </ul>
@@ -50,22 +46,22 @@ export default function Footer() {
 
           {/* Daily Verse & Inspiration */}
           <div className="space-y-4">
-            <h3 className="font-serif font-semibold text-stone-900 text-lg tracking-wide">Daily Inspiration</h3>
+            <h3 className="font-serif font-semibold text-stone-900 text-lg tracking-wide">Ka Jingpyntngen Man Ka Sngi</h3>
             <blockquote className="bg-[#FAF9F6] p-4 rounded-xl border border-stone-200 shadow-2xs italic text-stone-700 text-sm leading-relaxed space-y-2">
-              <p>&ldquo;Sing to the Lord a new song; sing to the Lord, all the earth. Sing to the Lord, praise his name; proclaim his salvation day after day.&rdquo;</p>
-              <footer className="text-xs font-semibold text-amber-800 not-italic">— Psalm 96:1-2</footer>
+              <p>&ldquo;To rwai ha U Trai ka jingrwai kaba thymmai; to rwai ha U Trai, ko pyrthei baroh. To rwai ha U Trai, to kyrkhu ia ka kyrteng jong u; to iathuh khana ia ka jingpynim jong u man ka sngi.&rdquo;</p>
+              <footer className="text-xs font-semibold text-amber-800 not-italic">— Salm 96:1-2</footer>
             </blockquote>
           </div>
         </div>
 
         {/* Bottom Bar */}
         <div className="mt-16 pt-8 border-t border-stone-200/80 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-stone-500">
-          <p>© {new Date().getFullYear()} Canticle Hymnal Archive. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Ka Kot Jingrwai - Balang U Khrist. Baroh ki hok la pynneh.</p>
           <div className="flex items-center gap-6">
-            <Link href="/about" className="hover:text-stone-800 transition-colors">Privacy Policy</Link>
-            <Link href="/about" className="hover:text-stone-800 transition-colors">Terms of Service</Link>
+            <Link href="/about" className="hover:text-stone-800 transition-colors">Ki Riti Treikam</Link>
+            <Link href="/about" className="hover:text-stone-800 transition-colors">Ki Kyndon</Link>
             <span className="flex items-center gap-1">
-              Crafted with <Heart className="w-3 h-3 text-red-600 fill-red-600" /> for worship
+              La shna da ka <Heart className="w-3 h-3 text-red-600 fill-red-600" /> na bynta ka jingmane
             </span>
           </div>
         </div>
