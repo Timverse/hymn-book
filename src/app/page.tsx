@@ -5,13 +5,15 @@ import { HYMNS } from "@/data/hymns";
 import HymnCard from "@/components/HymnCard";
 import SearchBar from "@/components/SearchBar";
 import DailyVerseHero from "@/components/DailyVerseHero";
-import { BookOpen, Sparkles, Music } from "lucide-react";
+import { BookOpen, Music, WifiOff, Download } from "lucide-react";
+import { useAppNetwork } from "@/context/NetworkContext";
 
 export default function HomePage() {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedSection, setSelectedSection] = useState<string>("Baroh");
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 40;
+  const { isOnline, downloadedHymns } = useAppNetwork();
 
   const handleSearchChange = (query: string) => {
     setSearchQuery(query);
@@ -26,6 +28,11 @@ export default function HomePage() {
   const filteredHymns = useMemo(() => {
     const query = searchQuery.toLowerCase().trim();
     let list = HYMNS;
+
+    // Filter by offline downloads if not online
+    if (!isOnline) {
+      list = list.filter(h => downloadedHymns.includes(h.id));
+    }
 
     if (selectedSection !== "Baroh") {
       if (selectedSection === "Ki Jingrwai") {
@@ -45,7 +52,7 @@ export default function HomePage() {
 
       return matchesTitle || matchesNumber || matchesLyrics;
     });
-  }, [searchQuery, selectedSection]);
+  }, [searchQuery, selectedSection, isOnline, downloadedHymns]);
 
   const totalPages = Math.ceil(filteredHymns.length / itemsPerPage);
 
@@ -60,7 +67,27 @@ export default function HomePage() {
       <DailyVerseHero />
 
       {/* Main Content Area */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12 py-12 sm:py-16 md:py-20 flex-1 w-full space-y-10 sm:space-y-14">
+      <section className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12 py-8 sm:py-12 md:py-16 flex-1 w-full space-y-8 sm:space-y-12">
+        {/* Offline Warning Banner */}
+        {!isOnline && (
+          <div className="bg-amber-50 border border-amber-200/80 rounded-2xl p-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 shadow-2xs animate-fadeIn">
+            <div className="flex items-center gap-3.5">
+              <div className="w-11 h-11 rounded-xl bg-amber-100/80 text-amber-800 flex items-center justify-center flex-shrink-0 shadow-2xs">
+                <WifiOff className="w-5 h-5" />
+              </div>
+              <div>
+                <h3 className="font-serif text-base font-bold text-stone-900 tracking-tight">Offline Mode Active</h3>
+                <p className="text-stone-600 text-xs sm:text-sm mt-0.5">
+                  You are offline. Showing <strong className="text-stone-900">{downloadedHymns.length} downloaded songs</strong> available for offline worship.
+                </p>
+              </div>
+            </div>
+            <div className="bg-white/80 border border-amber-200 text-amber-900 text-xs font-semibold px-3.5 py-1.5 rounded-xl shadow-2xs whitespace-nowrap self-stretch sm:self-auto text-center">
+              Internet Required for Full Catalog
+            </div>
+          </div>
+        )}
+
         {/* Search Bar */}
         <div className="max-w-2xl mx-auto w-full px-2 sm:px-0">
           <SearchBar searchQuery={searchQuery} onSearchChange={handleSearchChange} />
@@ -96,27 +123,35 @@ export default function HomePage() {
 
         {/* Hymn Grid */}
         {displayedHymns.length > 0 ? (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10 animate-fadeIn" role="list">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 lg:gap-8 animate-fadeIn" role="list">
             {displayedHymns.map((hymn) => (
               <HymnCard key={hymn.id} hymn={hymn} />
             ))}
           </div>
         ) : (
-          <div className="bg-white border border-stone-200/80 rounded-3xl p-8 sm:p-12 md:p-16 text-center max-w-lg mx-auto space-y-4 shadow-xs">
+          <div className="bg-white border border-stone-200/80 rounded-3xl p-8 sm:p-12 md:p-16 text-center max-w-lg mx-auto space-y-4 shadow-xs animate-fadeIn">
             <div className="w-16 h-16 rounded-2xl bg-amber-50 text-amber-800 flex items-center justify-center mx-auto shadow-2xs">
-              <Music className="w-8 h-8" />
+              {!isOnline ? <Download className="w-8 h-8" /> : <Music className="w-8 h-8" />}
             </div>
-            <h3 className="font-serif text-xl sm:text-2xl font-bold text-stone-900">Ym Shem Jingrwai</h3>
+            <h3 className="font-serif text-xl sm:text-2xl font-bold text-stone-900">
+              {!isOnline ? "No Downloaded Songs Found" : "Ym Shem Jingrwai"}
+            </h3>
             <p className="text-stone-500 text-sm sm:text-base leading-relaxed">
-              Ngi ym shym la shem jingrwai ba iadei bad &ldquo;<strong className="text-stone-800">{searchQuery}</strong>&rdquo;.
+              {!isOnline ? (
+                "You haven't downloaded any songs yet, or none match your search. Connect to the internet to browse the full catalog and download songs for offline use."
+              ) : (
+                <>Ngi ym shym la shem jingrwai ba iadei bad &ldquo;<strong className="text-stone-800">{searchQuery}</strong>&rdquo;.</>
+              )}
             </p>
-            <button
-              type="button"
-              onClick={() => handleSearchChange("")}
-              className="mt-4 px-8 py-3 bg-stone-900 text-white rounded-full text-sm font-medium hover:bg-stone-800 transition-colors shadow-md"
-            >
-              Wad Biang
-            </button>
+            {isOnline && (
+              <button
+                type="button"
+                onClick={() => handleSearchChange("")}
+                className="mt-4 px-8 py-3 bg-stone-900 text-white rounded-full text-sm font-medium hover:bg-stone-800 transition-colors shadow-md"
+              >
+                Wad Biang
+              </button>
+            )}
           </div>
         )}
 

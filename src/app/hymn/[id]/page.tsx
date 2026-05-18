@@ -43,7 +43,7 @@ export default async function HymnDetailPage({ params }: Props) {
   }
 
   return (
-    <div className="flex-1 w-full max-w-6xl mx-auto px-4 sm:px-8 lg:px-12 py-12 md:py-20 space-y-12 sm:space-y-16">
+    <div className="flex-1 w-full max-w-6xl mx-auto px-4 sm:px-8 lg:px-12 py-8 md:py-16 space-y-8 sm:space-y-12">
       {/* Top Navigation & Actions */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between border-b border-stone-200/80 pb-6 gap-4 sm:gap-0">
         <Link
@@ -51,7 +51,7 @@ export default async function HymnDetailPage({ params }: Props) {
           className="inline-flex items-center gap-2 text-sm font-medium text-stone-600 hover:text-stone-900 transition-colors group p-1"
         >
           <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
-          <span>Back to Hymns</span>
+          <span>Phai Sha Sla Kmie</span>
         </Link>
         <div className="flex items-center gap-3 self-start sm:self-auto">
           <span className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-amber-50 border border-amber-200/60 text-amber-800 font-mono text-xs sm:text-sm font-bold tracking-wider shadow-2xs">
@@ -69,7 +69,7 @@ export default async function HymnDetailPage({ params }: Props) {
 
       {/* Lyrics Viewer */}
       <section aria-label="Hymn Lyrics">
-        <LyricsViewer verses={hymn.verses} chorus={hymn.chorus} />
+        <LyricsViewer verses={hymn.verses} chorus={hymn.chorus} hymnId={hymn.id} hymnTitle={hymn.title} />
       </section>
     </div>
   );

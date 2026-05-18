@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import { Playfair_Display, Inter } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import TopAppBar from "@/components/TopAppBar";
+import BottomTabBar from "@/components/BottomTabBar";
+import CapacitorAppController from "@/components/CapacitorAppController";
+import { NetworkProvider } from "@/context/NetworkContext";
 
 const playfair = Playfair_Display({
   variable: "--font-playfair",
@@ -44,10 +46,13 @@ export default function RootLayout({
       lang="en"
       className={`${playfair.variable} ${inter.variable} h-full antialiased scroll-smooth`}
     >
-      <body className="min-h-full flex flex-col bg-[#FAF9F6] text-stone-800 font-sans selection:bg-amber-100 selection:text-amber-900">
-        <Navbar />
-        <main className="flex-1 flex flex-col">{children}</main>
-        <Footer />
+      <body className="min-h-full flex flex-col bg-[#FAF9F6] text-stone-800 font-sans selection:bg-amber-100 selection:text-amber-900 pb-16">
+        <NetworkProvider>
+          <CapacitorAppController />
+          <TopAppBar />
+          <main className="flex-1 flex flex-col pb-6">{children}</main>
+          <BottomTabBar />
+        </NetworkProvider>
       </body>
     </html>
   );
