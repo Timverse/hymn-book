@@ -140,12 +140,12 @@ export const songs81to137: Hymn[] = [
     "title": "(R-111) To Kmen Phi Kiba Sngur",
     "number": 93,
     "verses": [
-      "1. To kmen phi kiba sngur,\nTo kmen, aingmd bad rwai;\nKaweh la ka lama sha jrong,\nKa diengphna jong u Trai.",
+      "1. To kmen phi kiba sngur,\nTo kmen, ainguh bad rwai;\nKaweh la ka lama sha jrong,\nKa diengphna jong u Trai.",
       "2. Da ka ktien ba jem eh,\nKumba duriaw ka rwai;\nRwai jingrwai ha ki kpa ki ieit,\nKi Salm na mynhyndai.",
       "3. Lama jong phi to rah,\nTur sha jingïaleh hi;\nKum shipai ïaleh pyrshah jingdum,\nHadmd ban da mih sngi.",
-      "4. Khutduh jingleit kan wai,\nKiba thait jingsuk kin shem;\nPilgrim kin poi sha ïng i Pa,\nHa shnong Jerusalem."
+      "4. Khatduh jingleit kan wai,\nKiba thait jingsuk kin shem;\nPilgrim kin poi sha ïng i Pa,\nHa shnong Jerusalem."
     ],
-    "chorus": "To kmen, to kmen,\nTo kmen, aingmd bad rwai."
+    "chorus": "To kmen, to kmen,\nTo kmen, ainguh bad rwai."
   },
   {
     "id": "to-ai-ngin-bud-ia-ki-dienjat",

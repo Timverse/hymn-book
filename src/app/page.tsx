@@ -4,6 +4,7 @@ import React, { useState, useMemo } from "react";
 import { HYMNS } from "@/data/hymns";
 import HymnCard from "@/components/HymnCard";
 import SearchBar from "@/components/SearchBar";
+import DailyVerseHero from "@/components/DailyVerseHero";
 import { BookOpen, Sparkles, Music } from "lucide-react";
 
 export default function HomePage() {
@@ -55,39 +56,16 @@ export default function HomePage() {
 
   return (
     <div className="flex-1 flex flex-col w-full">
-      {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-[#FAF9F6] via-[#F4F3EE] to-[#FAF9F6] py-16 sm:py-24 md:py-32 border-b border-stone-200/60">
-        <div className="absolute inset-0 bg-[radial-gradient(#E7E5DF_1px,transparent_1px)] [background-size:16px_16px] opacity-60 pointer-events-none"></div>
-        
-        <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12 relative z-10 text-center space-y-8 sm:space-y-10">
-          {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-50 border border-amber-200/80 text-amber-800 text-xs font-semibold tracking-wide shadow-2xs animate-fadeIn">
-            <Sparkles className="w-3.5 h-3.5 text-amber-600 animate-spin" />
-            <span>Ka Kot Jingrwai - Balang U Khrist</span>
-          </div>
-
-          {/* Heading */}
-          <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-stone-900 tracking-tight max-w-4xl mx-auto leading-[1.2] sm:leading-[1.15]">
-            Ka Kot Jingrwai Jong Ka <br className="hidden sm:inline" />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-800 via-amber-900 to-stone-900">
-              Balang U Khrist
-            </span>
-          </h1>
-
-          {/* Subtitle */}
-          <p className="text-stone-600 text-base sm:text-lg md:text-xl max-w-2xl mx-auto font-normal leading-relaxed px-2">
-            Wad bad rwai ia ki jingrwai mane Blei ba la pynkhreh pynjanai ryngkat ki kyntien ba pura bad ka jingwad ba stet.
-          </p>
-
-          {/* Search Bar */}
-          <div className="pt-4 max-w-2xl mx-auto w-full px-2 sm:px-0">
-            <SearchBar searchQuery={searchQuery} onSearchChange={handleSearchChange} />
-          </div>
-        </div>
-      </section>
+      {/* Daily Verse Hero Section */}
+      <DailyVerseHero />
 
       {/* Main Content Area */}
       <section className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12 py-12 sm:py-16 md:py-20 flex-1 w-full space-y-10 sm:space-y-14">
+        {/* Search Bar */}
+        <div className="max-w-2xl mx-auto w-full px-2 sm:px-0">
+          <SearchBar searchQuery={searchQuery} onSearchChange={handleSearchChange} />
+        </div>
+
         <div className="flex flex-col lg:flex-row lg:items-center justify-between border-b border-stone-200/80 pb-6 gap-6">
           <h2 className="font-serif text-2xl sm:text-3xl font-bold text-stone-900 tracking-tight flex items-center gap-3">
             <BookOpen className="w-7 h-7 text-amber-800 flex-shrink-0" />
