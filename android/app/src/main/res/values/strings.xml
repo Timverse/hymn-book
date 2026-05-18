@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Ka Kot Jingrwai</string>
+    <string name="title_activity_main">Ka Kot Jingrwai</string>
+    <string name="package_name">com.timverse.hymnbook</string>
+    <string name="custom_url_scheme">com.timverse.hymnbook</string>
+</resources>
