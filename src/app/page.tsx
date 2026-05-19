@@ -36,7 +36,7 @@ export default function HomePage() {
 
     if (selectedSection !== "Baroh") {
       if (selectedSection === "Ki Jingrwai") {
-        list = list.filter(h => !h.section || h.section === "Hymns");
+        list = list.filter(h => !h.section || h.section === "Ki Jingrwai" || h.section === "Hymns");
       } else {
         list = list.filter(h => h.section === selectedSection);
       }
