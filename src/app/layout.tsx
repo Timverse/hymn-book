@@ -19,16 +19,16 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Ka Kot Jingrwai | Balang U Khrist",
-  description: "Ka kot jingrwai ba la pynkhreh pynjanai na bynta ka jingmane bad jingiaroh ia U Blei.",
-  keywords: ["jingrwai", "balang u khrist", "khasi hymns", "kot jingrwai", "jingmane", "khasi christian hymns"],
-  authors: [{ name: "Balang U Khrist" }],
+  title: "The Hymn Book | Church of Christ",
+  description: "The digital hymn book designed for worship and praise to God.",
+  keywords: ["hymn book", "church of christ", "khasi hymns", "worship", "praise", "christian hymns"],
+  authors: [{ name: "Church of Christ" }],
   openGraph: {
-    title: "Ka Kot Jingrwai | Balang U Khrist",
-    description: "Ka kot jingrwai ba la pynkhreh pynjanai na bynta ka jingmane bad jingiaroh ia U Blei.",
+    title: "The Hymn Book | Church of Christ",
+    description: "The digital hymn book designed for worship and praise to God.",
     type: "website",
     locale: "en_US",
-    siteName: "Ka Kot Jingrwai",
+    siteName: "The Hymn Book",
   },
   robots: {
     index: true,

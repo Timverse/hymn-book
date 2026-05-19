@@ -39,9 +39,9 @@ function SearchBarInput({ searchQuery, onSearchChange }: SearchBarProps) {
         type="text"
         value={searchQuery}
         onChange={(e) => onSearchChange(e.target.value)}
-        placeholder="Wad da ka kyrteng, u nombar, lane ki kyntien... (Shon ⌘K)"
+        placeholder="Search by title, number, or lyrics... (Press ⌘K)"
         className="w-full pl-13 pr-12 py-4 bg-white border border-stone-200/80 rounded-2xl text-stone-800 placeholder-stone-400 text-base shadow-lg shadow-stone-100 focus:outline-none focus:ring-2 focus:ring-amber-600 focus:border-transparent transition-all duration-200"
-        aria-label="Wad jingrwai"
+        aria-label="Search hymns"
       />
       {searchQuery && (
         <button
@@ -51,7 +51,7 @@ function SearchBarInput({ searchQuery, onSearchChange }: SearchBarProps) {
             inputRef.current?.focus();
           }}
           className="absolute right-4 p-1.5 rounded-full hover:bg-stone-100 text-stone-400 hover:text-stone-600 transition-colors focus:outline-none focus:ring-2 focus:ring-amber-600"
-          aria-label="Pynkhuid ia ka jingwad"
+          aria-label="Clear search"
         >
           <X className="w-5 h-5" />
         </button>
@@ -69,7 +69,7 @@ export default function SearchBar({ searchQuery, onSearchChange }: SearchBarProp
           <input
             type="text"
             disabled
-            placeholder="Dang plie ia ka jingwad..."
+            placeholder="Loading search..."
             className="w-full pl-13 pr-12 py-4 bg-white border border-stone-200/80 rounded-2xl text-stone-400 text-base shadow-lg shadow-stone-100 focus:outline-none"
           />
         </div>
@@ -77,7 +77,7 @@ export default function SearchBar({ searchQuery, onSearchChange }: SearchBarProp
         <SearchBarInput searchQuery={searchQuery} onSearchChange={onSearchChange} />
       </Suspense>
       <div className="mt-2.5 flex items-center justify-center gap-2 text-xs text-stone-500">
-        <span>Tip: Wad ia u nombar kum <strong className="text-stone-700">#1</strong> lane ki kyntien kum <strong className="text-stone-700">&ldquo;Jingieid&rdquo;</strong></span>
+        <span>Tip: Search for a number like <strong className="text-stone-700">#1</strong> or keywords like <strong className="text-stone-700">&ldquo;Love&rdquo;</strong></span>
       </div>
     </div>
   );

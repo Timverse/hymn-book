@@ -1,49 +1,49 @@
 import React from "react";
 import Link from "next/link";
-import { BookOpen, Sparkles, CheckCircle, Heart, ArrowRight } from "lucide-react";
+import { BookOpen, Sparkles, CheckCircle, ArrowRight } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Shaphang | Ka Kot Jingrwai",
-  description: "Sngewthuh shaphang ka thong bad ka jingpynkhreh ia Ka Kot Jingrwai jong ka Balang U Khrist.",
+  title: "About | The Hymn Book",
+  description: "Learn about the mission, history, and features of The Hymn Book of the Church of Christ.",
 };
 
 export default function AboutPage() {
   const features = [
     {
-      title: "Ka Jingpynkhreh Ba Pura",
-      description: "Man la ka jingrwai la pynkhreh ban pynneh ia ki kyntien bad ki dkhot ba tynrai.",
+      title: "Complete Hymn Collection",
+      description: "Every hymn is carefully formatted to preserve its traditional verses, choruses, and numbering.",
     },
     {
-      title: "Ka Jingpule Ba Shai",
-      description: "La pynwandur da ki dak kiba shai, ki rukom pule ba lah ban pynkylla (Phngain, Stem, Dum), bad ka saiz dak ba lah ban pynheh pynrit na bynta ka jingmane balang.",
+      title: "Customizable Reading Experience",
+      description: "Designed with clear typography, adjustable reading themes (Light, Sepia, Dark), and scalable font sizes for personal or congregational worship.",
     },
     {
-      title: "Ka Jingwad Ba Stet",
-      description: "Wad stet ia kano kano ka jingrwai da kaba thoh ia ka kyrteng, u nombar, lane ki kyntien.",
+      title: "Instant Search",
+      description: "Quickly find any hymn by typing its title, number, or keywords from the lyrics.",
     },
     {
-      title: "Ka Jingtrei Kam Ba Stet",
-      description: "La shna ban plie stet khlem da pynslem, ban pynsuk ia ka jingplie wat ha ki jaka ba tlot ka netwrok.",
+      title: "Offline First Architecture",
+      description: "Built to load instantly and function smoothly even in areas with poor or no internet connectivity after downloading songs.",
     },
   ];
 
   return (
-    <div className="flex-1 w-full max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20 space-y-16">
+    <div className="flex-1 w-full max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-16 space-y-16 animate-fadeIn">
       {/* Hero Section */}
       <header className="text-center space-y-6 max-w-3xl mx-auto">
         <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-amber-50 border border-amber-200/80 text-amber-800 text-xs font-semibold tracking-wide shadow-2xs">
           <Sparkles className="w-3.5 h-3.5 text-amber-600 animate-pulse" />
-          <span>Ka Thong Jong Ngi</span>
+          <span>Our Mission</span>
         </div>
         <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl font-extrabold text-stone-900 tracking-tight leading-[1.15]">
-          Pynneh Pynsah Ia Ki Jingrwai <br className="hidden sm:inline" />
+          Preserving the Hymns of the <br className="hidden sm:inline" />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-800 via-amber-900 to-stone-900">
-            Balang U Khrist
+            Church of Christ
           </span>
         </h1>
         <p className="text-stone-600 text-lg sm:text-xl leading-relaxed max-w-2xl mx-auto">
-          Ka Kot Jingrwai la shna na bynta ka jingburom ia ka history jong ki jingrwai mane Blei. Ka rynsan jong ngi ka pyniasoh ia ki jingrwai tynrai bad ka juk shna kot digital ba mynta.
+          The Hymn Book is designed to honor the rich heritage of Christian worship. Our platform bridges traditional hymns with modern digital convenience.
         </p>
       </header>
 
@@ -67,20 +67,20 @@ export default function AboutPage() {
       <section className="bg-[#FAF9F6] border border-stone-200 rounded-3xl p-8 sm:p-12 md:p-16 space-y-8 shadow-2xs">
         <div className="max-w-3xl mx-auto space-y-6 text-stone-700 text-base sm:text-lg leading-relaxed font-serif">
           <h2 className="font-serif text-3xl sm:text-4xl font-bold text-stone-900 tracking-tight text-center mb-8 not-italic">
-            Ka Mynsiem Ha Lyndet Ka Kot Jingrwai
+            The Spirit Behind The Hymn Book
           </h2>
           <p>
-            La bun spah snem, ki jingrwai ki la long ka nongrim jong ka jingmane Blei. Kine ki jingrwai ki la ai jingpyntngen ha ki jingjynjar, ka jingshlur ha ki jingtynjuh, bad ka jingkmen ha ki jingrakhe.
+            For generations, hymns have formed the bedrock of Christian worship. These timeless songs provide comfort in trials, courage in testing, and joy in celebration.
           </p>
           <p>
-            Hynrei, bun ki application jingrwai mynta ki don ki jingpynthut bad ki advertisement. Ka Kot Jingrwai la shna kyrpang ban long ka jaka ba khuid bad ba shai. Man la i bynta la pynkhreh na bynta ka jingburom bad ka jingpule ba shai.
+            However, many modern hymn applications are cluttered with distracting interfaces. The Hymn Book is crafted specifically to provide a clean, distraction-free environment. Every element is designed to facilitate reverence and easy reading.
           </p>
           <blockquote className="border-l-4 border-amber-700 pl-6 py-2 my-8 italic text-stone-900 font-semibold text-lg sm:text-xl bg-amber-50/50 rounded-r-xl">
-            &ldquo;Hadien ka Ktien U Blei, ka jingrwai ka long ka spah ba kordor tam ha ka pyrthei.&rdquo;
+            &ldquo;Next to the Word of God, music deserves the highest praise.&rdquo;
             <span className="block text-xs font-sans font-bold text-amber-800 mt-2 not-italic">— Martin Luther</span>
           </blockquote>
           <p>
-            La phi long u nongialam jingmane, u nonghikai rwai, lane uba mane shimet, Ka Kot Jingrwai ka long ka paralok ba shaniah jong phi.
+            Whether you are a worship leader, choir director, or seeking personal devotion, The Hymn Book is your trusted companion in worship.
           </p>
         </div>
       </section>
@@ -90,16 +90,16 @@ export default function AboutPage() {
         <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-amber-700 to-amber-900 text-white flex items-center justify-center mx-auto shadow-md shadow-amber-900/10">
           <BookOpen className="w-8 h-8 animate-pulse" />
         </div>
-        <h3 className="font-serif text-2xl sm:text-3xl font-bold text-stone-900">Sdang Ia Ka Jingmane Jong Phi</h3>
+        <h3 className="font-serif text-2xl sm:text-3xl font-bold text-stone-900">Start Your Worship Experience</h3>
         <p className="text-stone-600 text-base leading-relaxed max-w-lg mx-auto">
-          Wad ia ki jingrwai lane buh ia ki jingrwai ba phi jied tam mynta ka sngi.
+          Explore the catalog or curate your personal favorite hymns today.
         </p>
         <div className="pt-2">
           <Link
             href="/"
             className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-stone-900 hover:bg-stone-800 text-white font-medium text-sm transition-colors shadow-sm"
           >
-            <span>Peit Ia Ki Jingrwai</span> <ArrowRight className="w-4 h-4" />
+            <span>Browse All Hymns</span> <ArrowRight className="w-4 h-4" />
           </Link>
         </div>
       </footer>

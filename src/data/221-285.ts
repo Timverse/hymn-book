@@ -703,42 +703,12 @@ export const songs221to285: Hymn[] = [
     "chorus": "Ym na kaba sngewsih lane kaba pynbor.\nKaba ai da jingkmen Blei u ieit bad ñiewkor;\nJingaiei roi kyrhai baroh kan long ïa phi,\nTrai u tip ban pyndap jingdonkam man ka sngi."
   },
   {
-    "id": "to-ai-da-kaba-kmen",
-    "title": "To Ai Da Kaba Kmen",
-    "number": 281,
-    "verses": [
-      "1. To uwei pa uwei na phi kumta un ai,\nKatba thmu ha la ka dohnud jar jar shisha;\nNamar ka kam bakhraw ka lyngkha jong u Trai.\nKi mynsiem bakordor ïoh jingaiei shirta.",
-      "2. Jinglehsbun ka jingai kylluid mynsiem ban sei,\nKam long tang jingïasa'm jingkyrduh ki riewkhuid;\nHynrei ka long ruh jingainguh shibun ï'u Blei,\nKa wahbah jingkyrkhu na u ha ngi ïai tuid.",
-      "3. Kitab na mynbarim ktien u Blei ka la thoh,\n'Trai u la bet kyrhai u ai ha ki baduk';\nLyngkha u Trai kan roi bad kumta kan seisoh,\nNamar ka Hok jong u ka neh sha bymjukut.",
-      "4. To ngin ïoh ban nangkhraw sha jinglehbha baroh,\nNamar u Jisu Trai to ngin long ka jingnguh:\nBlei u Kpa u la phah ï'u khun jingim ngi ioh,\nKat kane ka jingai kordor bym lah ong shuh."
-    ],
-    "chorus": "Ym na kaba sngewsih lane kaba pynbor.\nKaba ai da jingkmen Blei u ieit bad ñiewkor;\nJingaiei roi kyrhai baroh kan long ïa phi,\nTrai u tip ban pyndap jingdonkam man ka sngi."
-  },
-  {
     "id": "snem-thymmai",
     "title": "Snem Thymmai",
     "number": 282,
     "verses": [
       "1. Snem thymmai bad ka sngi thymmai;\nNgi la ïoh ban pdiang mynta,\nJingkyrkhu kaba dap kyrhai,\nTrai to ai ngin ïoh bynta.\nJingaiei jong me kim kut,\nKa ïaineh sha bymjukut;\nSngi ki bnai ki snem ki ïaid\nTrai to don ryngkat\nJingkmen jong kane kein ka sngi,\nBa ngi ïoh thymmai ka snem;\nNgin nangsan sha ka jingshakri,\nÏa me Trai da jingshitrhem.",
       "2. Khublei snem barim b'la leit noh,\nWat la ngim lah ïashem shuh;\nKiei kiei kiba ngi ïoh,\nHa jingkynmaw ieit ngi buh.\nNgin ïai trei ïai pynthymmai,\nHa ka lyngkha jong u Trai;\nSoh ka jingieit ban pynphriang,\nPyrthei kan ïoh pdiang.\nHa kane ka sngi ngi ïohsngew,\nSawa kmen ki sur jingtem;\nSnem thymmai - ha bneng bad khyndew,\nNamar Jisu Trai shadkmen."
-    ]
-  },
-  {
-    "id": "snem-thymmai",
-    "title": "Snem Thymmai",
-    "number": 282,
-    "verses": [
-      "1. Snem thymmai bad ka sngi thymmai;\nNgi la ïoh ban pdiang mynta,\nJingkyrkhu kaba dap kyrhai,\nTrai to ai ngin ïoh bynta.\nJingaiei jong me kim kut,\nKa ïaineh sha bymjukut;\nSngi ki bnai ki snem ki ïaid\nTrai to don ryngkat\nJingkmen jong kane kein ka sngi,\nBa ngi ïoh thymmai ka snem;\nNgin nangsan sha ka jingshakri,\nÏa me Trai da jingshitrhem.",
-      "2. Khublei snem barim b'la leit noh,\nWat la ngim lah ïashem shuh;\nKiei kiei kiba ngi ïoh,\nHa jingkynmaw ieit ngi buh.\nNgin ïai trei ïai pynthymmai,\nHa ka lyngkha jong u Trai;\nSoh ka jingieit ban pynphriang,\nPyrthei kan ïoh pdiang.\nHa kane ka sngi ngi ïohsngew,\nSawa kmen ki sur jingtem;\nSnem thymmai - ha bneng bad khyndew,\nNamar Jisu Trai shadkmen."
-    ]
-  },
-  {
-    "id": "sngi-bathymmai",
-    "title": "Sngi Bathymmai",
-    "number": 283,
-    "verses": [
-      "1. Sngi ba thymmai, ka sngi ka jingjop,\nNgi dei ban tei pyrthei thymmai;\nDa ka jingshlur, ngin nang ïa tur,\nBad la u Trai.\nSngi bathymmai, ka sngi ka jingshlur,\nKhlem da sheptieng ngin tur shaphrang;\nÏalam ko Trai, ha sngi thymmai,\nÏeng ko Balang!",
-      "2. Da ka jingshlur tur sha jingïaleh,\nNgin bud ïa u Khrist sha ka thma;\nPynskhem jingthmu ban bud ïa ka,\nJia katba jia.\nKhrist uba jop Syiem badonburom,\nA! nongpynim ki briew ngi dwai;\n\"Wan ka Hima long Mon jong me\",\nHa sngi thymmai."
     ]
   },
   {
@@ -759,28 +729,6 @@ export const songs221to285: Hymn[] = [
       "2. Ki jingrwai bad ki jingmane,\nJingduwai jingainguh;\nJingkren jingpule ktien jong me,\nBaroh sha me ngi buh.\nTo pdiang ko Trai kine baroh,\nNamar jingkyrkhu jong me jingdap biang ngi ïoh.",
       "3. Ko Trai wat ieh noh da lei lei,\nBad ngi to don ryngkat;\nKi borbah soitan bashyrkhei,\nJingieit Blei ban pynbthat.\nBaroh hangne kim long ei ei,\nKhlem ki jingkyrkhu jong me Trai long leh nohei.",
       "4. Ngi lum ko Trai namar ngi tip.\nMem ju iehnoh khunswet:\nKa kynhun kiba ngeit ha me,\nÏa iwei ruh ym klet.\nJiwnom jiwnom ngin ym ieh-noh,\nKyrteng badonbor jong me Trai ngin rwai ïaroh."
-    ]
-  },
-  {
-    "id": "kyrkhu-trai-a-jingshakri",
-    "title": "Kyrkhu Trai Ïa Jingshakri.",
-    "number": 284,
-    "verses": [
-      "1. Kyrkhu ko Trai ïa jingshakri,\nBa ngi la ïoh mynta;\nKin kiew soit sha khet jong me hi,\nB'la pdiang hun da shisha.\nHaduh ba jingim kan da wai,\nla la ki jong ki shakri wat ieh-noh A! Trai.",
-      "2. Ki jingrwai bad ki jingmane,\nJingduwai jingainguh;\nJingkren jingpule ktien jong me,\nBaroh sha me ngi buh.\nTo pdiang ko Trai kine baroh,\nNamar jingkyrkhu jong me jingdap biang ngi ïoh.",
-      "3. Ko Trai wat ieh noh da lei lei,\nBad ngi to don ryngkat;\nKi borbah soitan bashyrkhei,\nJingieit Blei ban pynbthat.\nBaroh hangne kim long ei ei,\nKhlem ki jingkyrkhu jong me Trai long leh nohei.",
-      "4. Ngi lum ko Trai namar ngi tip.\nMem ju iehnoh khunswet:\nKa kynhun kiba ngeit ha me,\nÏa iwei ruh ym klet.\nJiwnom jiwnom ngin ym ieh-noh,\nKyrteng badonbor jong me Trai ngin rwai ïaroh."
-    ]
-  },
-  {
-    "id": "mynsiem-jong-nga-ai-duwai",
-    "title": "Mynsiem Jong Nga Ïai Duwai",
-    "number": 285,
-    "verses": [
-      "1. Mynsiem jong nga to ïai duwai!\nYm slem shuh kjat sngi kin phyrnai,\nKane ka miet shen kan leit noh;\nJingdum kan phet baroh.",
-      "2. Mynsiem jong nga duwai shitrhem!\nKi jingtynjuh kin ym neh slem,\nShen jingrwai nongjop yn ïoh rwai;\nMynsiem jong nga ïai dwai.",
-      "3. Mynsiem jong nga to ïai duwai!\nU Trai un ri skhem bad janai,\nBaroh jingkhuslai jingjynjar;\nU Trai un pyllait phar.",
-      "4. To ïai duwai mynsiem jong nga!\nWat la ka miet ka dum synñia,\nKa step u Trai shen kan wan paw;\nHa ka sngi kaba khraw."
     ]
   },
   {

@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { AlignLeft, AlignCenter, Sun, Moon, BookOpen, Type, CloudDownload, CheckCircle, WifiOff, Loader2 } from "lucide-react";
 import { useAppNetwork } from "@/context/NetworkContext";
-import { AdMobService } from "@/services/AdMobService";
+import { UnityAdsService } from "@/services/UnityAdsService";
 
 interface LyricsViewerProps {
   verses: string[];
@@ -44,7 +44,7 @@ export default function LyricsViewer({ verses, chorus, hymnId, hymnTitle }: Lyri
     }
 
     setIsDownloading(true);
-    AdMobService.showRewardedAd(
+    UnityAdsService.showRewardedAd(
       () => {
         downloadHymn(hymnId);
         setIsDownloading(false);
@@ -88,7 +88,7 @@ export default function LyricsViewer({ verses, chorus, hymnId, hymnTitle }: Lyri
         <div className="flex items-center justify-between sm:justify-start gap-2 flex-wrap">
           <div className="flex items-center gap-2">
             <Type className="w-4 h-4 text-stone-400 hidden sm:block" />
-            <span className="text-xs font-semibold uppercase tracking-wider text-stone-500 mr-1 sm:mr-2">Saiz Dak:</span>
+            <span className="text-xs font-semibold uppercase tracking-wider text-stone-500 mr-1 sm:mr-2">Font Size:</span>
           </div>
           <div className="flex items-center gap-1 bg-stone-100 p-1 rounded-xl">
             {(["sm", "base", "lg", "xl"] as const).map((size) => (
@@ -99,7 +99,7 @@ export default function LyricsViewer({ verses, chorus, hymnId, hymnTitle }: Lyri
                 className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-all ${
                   fontSize === size ? "bg-white text-stone-900 shadow-xs font-bold" : "text-stone-600 hover:text-stone-900"
                 }`}
-                aria-label={`Pynkylla saiz dak sha ${size}`}
+                aria-label={`Change font size to ${size}`}
               >
                 {size.toUpperCase()}
               </button>
@@ -135,7 +135,7 @@ export default function LyricsViewer({ verses, chorus, hymnId, hymnTitle }: Lyri
               className={`p-2 rounded-lg transition-all ${
                 alignment === "left" ? "bg-white text-stone-900 shadow-xs" : "text-stone-600 hover:text-stone-900"
               }`}
-              aria-label="Pynbeit sha kadiang"
+              aria-label="Align Left"
             >
               <AlignLeft className="w-4 h-4" />
             </button>
@@ -145,7 +145,7 @@ export default function LyricsViewer({ verses, chorus, hymnId, hymnTitle }: Lyri
               className={`p-2 rounded-lg transition-all ${
                 alignment === "center" ? "bg-white text-stone-900 shadow-xs" : "text-stone-600 hover:text-stone-900"
               }`}
-              aria-label="Pynbeit sha pdeng"
+              aria-label="Align Center"
             >
               <AlignCenter className="w-4 h-4" />
             </button>
@@ -159,9 +159,9 @@ export default function LyricsViewer({ verses, chorus, hymnId, hymnTitle }: Lyri
               className={`px-3 py-1.5 rounded-lg text-xs font-medium flex items-center gap-1.5 transition-all ${
                 theme === "light" ? "bg-white text-stone-900 shadow-xs font-bold" : "text-stone-600 hover:text-stone-900"
               }`}
-              aria-label="Phngain theme"
+              aria-label="Light theme"
             >
-              <Sun className="w-3.5 h-3.5" /> Phngain
+              <Sun className="w-3.5 h-3.5" /> Light
             </button>
             <button
               type="button"
@@ -169,9 +169,9 @@ export default function LyricsViewer({ verses, chorus, hymnId, hymnTitle }: Lyri
               className={`px-3 py-1.5 rounded-lg text-xs font-medium flex items-center gap-1.5 transition-all ${
                 theme === "sepia" ? "bg-amber-100 text-amber-950 shadow-xs font-bold" : "text-stone-600 hover:text-stone-900"
               }`}
-              aria-label="Stem theme"
+              aria-label="Sepia theme"
             >
-              <BookOpen className="w-3.5 h-3.5" /> Stem
+              <BookOpen className="w-3.5 h-3.5" /> Sepia
             </button>
             <button
               type="button"
@@ -179,9 +179,9 @@ export default function LyricsViewer({ verses, chorus, hymnId, hymnTitle }: Lyri
               className={`px-3 py-1.5 rounded-lg text-xs font-medium flex items-center gap-1.5 transition-all ${
                 theme === "dark" ? "bg-stone-800 text-white shadow-xs font-bold" : "text-stone-600 hover:text-stone-900"
               }`}
-              aria-label="Dum theme"
+              aria-label="Dark theme"
             >
-              <Moon className="w-3.5 h-3.5" /> Dum
+              <Moon className="w-3.5 h-3.5" /> Dark
             </button>
           </div>
         </div>
@@ -191,26 +191,28 @@ export default function LyricsViewer({ verses, chorus, hymnId, hymnTitle }: Lyri
       <div className={`border rounded-3xl p-6 sm:p-10 md:p-16 transition-all duration-300 ${themeStyles[theme]}`}>
         <div className={`font-serif max-w-4xl mx-auto space-y-10 sm:space-y-12 ${alignment === "center" ? "text-center" : "text-left"}`}>
           {verses.map((verse, idx) => (
-            <div key={idx} className="space-y-4 group">
-              <span className="text-xs font-mono font-bold text-amber-700/80 uppercase tracking-widest block mb-2 select-none opacity-60 group-hover:opacity-100 transition-opacity">
-                Dkhot {idx + 1}
-              </span>
-              <p className={`${fontSizes[fontSize]} whitespace-pre-line tracking-wide`}>
-                {verse}
-              </p>
-            </div>
-          ))}
+            <React.Fragment key={idx}>
+              <div className="space-y-4 group">
+                <span className="text-xs font-mono font-bold text-amber-700/80 uppercase tracking-widest block mb-2 select-none opacity-60 group-hover:opacity-100 transition-opacity">
+                  Verse {idx + 1}
+                </span>
+                <p className={`${fontSizes[fontSize]} whitespace-pre-line tracking-wide`}>
+                  {verse}
+                </p>
+              </div>
 
-          {chorus && (
-            <div className="my-14 p-6 sm:p-10 bg-amber-50/40 border-y border-amber-200/60 rounded-3xl space-y-4 group">
-              <span className="text-xs font-mono font-bold text-amber-800 uppercase tracking-widest block mb-2 select-none">
-                Korus
-              </span>
-              <p className={`${fontSizes[fontSize]} whitespace-pre-line tracking-wide font-medium italic text-amber-950`}>
-                {chorus}
-              </p>
-            </div>
-          )}
+              {chorus && (
+                <div className="my-8 p-6 sm:p-8 bg-amber-50/40 border-y border-amber-200/60 rounded-3xl space-y-3 group shadow-2xs">
+                  <span className="text-xs font-mono font-bold text-amber-800 uppercase tracking-widest block mb-1 select-none opacity-80">
+                    Chorus
+                  </span>
+                  <p className={`${fontSizes[fontSize]} whitespace-pre-line tracking-wide font-medium italic text-amber-950`}>
+                    {chorus}
+                  </p>
+                </div>
+              )}
+            </React.Fragment>
+          ))}
         </div>
       </div>
     </div>

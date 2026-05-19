@@ -156,10 +156,10 @@ export default function TopicalIndexPage() {
         {/* Header */}
         <div className="space-y-4 animate-fadeIn px-2">
           <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-stone-900 tracking-tight leading-[1.15]">
-            Kdew Lynnong (Topical Index)
+            Topical Index
           </h1>
           <p className="text-stone-600 text-base sm:text-lg max-w-2xl leading-relaxed">
-            Wad ia ki jingrwai mane Blei da ki phang (categories) bad ki bynta ba iadei bad ka jingim Khristan.
+            Browse Christian hymns by their theme, category, and biblical topic.
           </p>
         </div>
 
@@ -173,7 +173,7 @@ export default function TopicalIndexPage() {
             type="text"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            placeholder="Wad phang, kyrteng ne nombor..."
+            placeholder="Filter by topic, title or number..."
             className="w-full pl-14 sm:pl-12 pr-4 py-3.5 sm:py-3 rounded-full border border-stone-200/80 bg-white text-stone-900 placeholder:text-stone-400 text-sm focus:outline-none focus:ring-2 focus:ring-amber-600 focus:border-transparent transition-all shadow-2xs"
           />
         </div>
@@ -186,7 +186,7 @@ export default function TopicalIndexPage() {
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between border-b border-stone-100 pb-4 gap-3 sm:gap-2">
                   <h2 className="font-serif text-2xl sm:text-3xl font-bold text-stone-900 leading-snug">{group.topic}</h2>
                   <span className="text-xs sm:text-sm font-sans font-semibold px-3.5 py-1.5 rounded-full bg-amber-50 border border-amber-200/80 text-amber-800 self-start sm:self-auto shadow-2xs flex-shrink-0">
-                    {group.numbers.length} {group.numbers.length === 1 ? "Jingrwai" : "Jingrwai"}
+                    {group.numbers.length} {group.numbers.length === 1 ? "Song" : "Songs"}
                   </span>
                 </div>
 
@@ -194,7 +194,7 @@ export default function TopicalIndexPage() {
                   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
                     {group.numbers.map((num) => {
                       const song = map.get(num);
-                      const title = song ? song.title : `Jingrwai #${num}`;
+                      const title = song ? song.title : `Hymn #${num}`;
 
                       const CardContent = (
                         <div className="flex items-center justify-between p-4 sm:p-5 rounded-3xl bg-[#FAF9F6] border border-stone-200/60 hover:border-amber-600/50 hover:bg-white hover:shadow-md transition-all duration-200 group">
@@ -222,23 +222,23 @@ export default function TopicalIndexPage() {
                     })}
                   </div>
                 ) : (
-                  <p className="text-stone-400 italic text-sm sm:text-base py-2">Ym pat don jingrwai ha kane ka phang.</p>
+                  <p className="text-stone-400 italic text-sm sm:text-base py-2">No hymns listed under this topic yet.</p>
                 )}
               </section>
             ))}
           </div>
         ) : (
           <div className="bg-white border border-stone-200/80 rounded-3xl p-8 sm:p-12 md:p-16 text-center max-w-lg mx-auto space-y-4 shadow-xs animate-fadeIn">
-            <h3 className="font-serif text-xl sm:text-2xl font-bold text-stone-900">Ym Shem Phang</h3>
+            <h3 className="font-serif text-xl sm:text-2xl font-bold text-stone-900">No Topics Found</h3>
             <p className="text-stone-500 text-sm sm:text-base leading-relaxed">
-              Ngi ym shym la shem phang ne jingrwai ba iadei bad &ldquo;<strong className="text-stone-800">{searchQuery}</strong>&rdquo;.
+              No topics or hymns were found matching &ldquo;<strong className="text-stone-800">{searchQuery}</strong>&rdquo;.
             </p>
             <button
               type="button"
               onClick={() => setSearchQuery("")}
               className="mt-4 px-8 py-3 bg-stone-900 text-white rounded-full text-sm font-medium hover:bg-stone-800 transition-colors shadow-md"
             >
-              Wad Biang
+              Clear Filter
             </button>
           </div>
         )}

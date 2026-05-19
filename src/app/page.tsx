@@ -12,7 +12,7 @@ export default function HomePage() {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedSection, setSelectedSection] = useState<string>("Baroh");
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 40;
+  const itemsPerPage = 50;
   const { isOnline, downloadedHymns } = useAppNetwork();
 
   const handleSearchChange = (query: string) => {
@@ -61,6 +61,13 @@ export default function HomePage() {
     return filteredHymns.slice(start, start + itemsPerPage);
   }, [filteredHymns, currentPage]);
 
+  const sectionLabels: Record<string, string> = {
+    "Baroh": "All Hymns",
+    "Ki Jingrwai": "Hymns",
+    "Ki Jingrwai Khoros": "Choruses",
+    "Ki Jingrwai Praise": "Praise Songs"
+  };
+
   return (
     <div className="flex-1 flex flex-col w-full">
       {/* Daily Verse Hero Section */}
@@ -96,9 +103,9 @@ export default function HomePage() {
         <div className="flex flex-col lg:flex-row lg:items-center justify-between border-b border-stone-200/80 pb-6 gap-6">
           <h2 className="font-serif text-2xl sm:text-3xl font-bold text-stone-900 tracking-tight flex items-center gap-3">
             <BookOpen className="w-7 h-7 text-amber-800 flex-shrink-0" />
-            <span>Ki Jingrwai</span>
+            <span>Hymn Catalog</span>
             <span className="text-xs sm:text-sm font-sans font-medium px-3 py-1 rounded-full bg-stone-100 text-stone-600">
-              {filteredHymns.length} {filteredHymns.length === 1 ? "Jingrwai" : "Jingrwai"}
+              {filteredHymns.length} {filteredHymns.length === 1 ? "Song" : "Songs"}
             </span>
           </h2>
 
@@ -115,7 +122,7 @@ export default function HomePage() {
                     : "bg-stone-100/80 text-stone-600 hover:bg-stone-200/80 hover:text-stone-900"
                 }`}
               >
-                {section}
+                {sectionLabels[section]}
               </button>
             ))}
           </div>
@@ -134,13 +141,13 @@ export default function HomePage() {
               {!isOnline ? <Download className="w-8 h-8" /> : <Music className="w-8 h-8" />}
             </div>
             <h3 className="font-serif text-xl sm:text-2xl font-bold text-stone-900">
-              {!isOnline ? "No Downloaded Songs Found" : "Ym Shem Jingrwai"}
+              {!isOnline ? "No Downloaded Songs Found" : "No Hymns Found"}
             </h3>
             <p className="text-stone-500 text-sm sm:text-base leading-relaxed">
               {!isOnline ? (
                 "You haven't downloaded any songs yet, or none match your search. Connect to the internet to browse the full catalog and download songs for offline use."
               ) : (
-                <>Ngi ym shym la shem jingrwai ba iadei bad &ldquo;<strong className="text-stone-800">{searchQuery}</strong>&rdquo;.</>
+                <>No hymns were found matching &ldquo;<strong className="text-stone-800">{searchQuery}</strong>&rdquo;.</>
               )}
             </p>
             {isOnline && (
@@ -149,7 +156,7 @@ export default function HomePage() {
                 onClick={() => handleSearchChange("")}
                 className="mt-4 px-8 py-3 bg-stone-900 text-white rounded-full text-sm font-medium hover:bg-stone-800 transition-colors shadow-md"
               >
-                Wad Biang
+                Search Again
               </button>
             )}
           </div>
@@ -164,10 +171,10 @@ export default function HomePage() {
               disabled={currentPage === 1}
               className="w-full sm:w-auto px-6 py-3 rounded-full border border-stone-200 bg-white text-stone-700 text-sm font-medium hover:bg-stone-50 hover:border-stone-300 disabled:opacity-50 disabled:pointer-events-none transition-all shadow-2xs text-center"
             >
-              Kaba Shuwa
+              Previous
             </button>
             <span className="text-sm sm:text-base font-medium text-stone-600 order-first sm:order-none">
-              Sla <strong className="text-stone-900">{currentPage}</strong> na <strong className="text-stone-900">{totalPages}</strong>
+              Page <strong className="text-stone-900">{currentPage}</strong> of <strong className="text-stone-900">{totalPages}</strong>
             </span>
             <button
               type="button"
@@ -175,7 +182,7 @@ export default function HomePage() {
               disabled={currentPage === totalPages}
               className="w-full sm:w-auto px-6 py-3 rounded-full border border-stone-200 bg-white text-stone-700 text-sm font-medium hover:bg-stone-50 hover:border-stone-300 disabled:opacity-50 disabled:pointer-events-none transition-all shadow-2xs text-center"
             >
-              Kaba Bud
+              Next
             </button>
           </div>
         )}

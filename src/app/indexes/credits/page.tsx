@@ -11,10 +11,10 @@ export default function CreditsIndexPage() {
         {/* Header */}
         <div className="space-y-4 animate-fadeIn px-2">
           <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-stone-900 tracking-tight leading-[1.15]">
-            Ki Nongshna & Burom (Credits & Dedication)
+            Credits & Dedication
           </h1>
           <p className="text-stone-600 text-base sm:text-lg max-w-2xl leading-relaxed">
-            Ka jingai burom ia kiba la trei shitom ban pynbit pynbiang bad pynneh pynsah ia kane ka kot jingrwai.
+            Honoring the individuals who worked diligently to build and preserve this hymnal.
           </p>
         </div>
 
@@ -28,9 +28,9 @@ export default function CreditsIndexPage() {
             <div className="absolute inset-0 bg-[radial-gradient(#FAF9F6_1px,transparent_1px)] [background-size:24px_24px] opacity-10 pointer-events-none"></div>
             
             <div className="relative z-10 space-y-6 text-center sm:text-left">
-              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-amber-200 text-xs font-semibold tracking-wide">
+               <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-amber-200 text-xs font-semibold tracking-wide">
                 <Code className="w-3.5 h-3.5 animate-pulse flex-shrink-0" />
-                <span>Nongshna Website (Lead Developer)</span>
+                <span>Lead Developer</span>
               </div>
 
               <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight">
@@ -38,7 +38,7 @@ export default function CreditsIndexPage() {
               </h2>
 
               <p className="text-amber-100/90 text-base sm:text-lg max-w-2xl leading-relaxed font-light">
-                La shna bad pynbit pynbiang da U Eddie na bynta ka burom jong U Blei bad ban pynsuk ia ki para bangeit ha ka jingmane shimet bad ka jingmane balang.
+                Created and formatted by Eddie for the glory of God and to facilitate seamless personal and congregational worship.
               </p>
 
               <div className="pt-6 flex flex-wrap items-center justify-center sm:justify-start gap-4 sm:gap-6 text-xs sm:text-sm text-amber-200/80 font-medium border-t border-white/10">
@@ -46,7 +46,7 @@ export default function CreditsIndexPage() {
                   <Sparkles className="w-4 h-4 text-amber-300 flex-shrink-0" /> Khasi Hymnbook Digitalization
                 </span>
                 <span className="flex items-center gap-1.5">
-                  <Heart className="w-4 h-4 text-red-400 fill-red-400 flex-shrink-0" /> La shna da ka jingieit
+                  <Heart className="w-4 h-4 text-red-400 fill-red-400 flex-shrink-0" /> Crafted with love
                 </span>
               </div>
             </div>
@@ -59,35 +59,35 @@ export default function CreditsIndexPage() {
                 <Award className="w-6 h-6" />
               </div>
               <h3 className="font-serif text-2xl sm:text-3xl lg:text-4xl font-bold text-stone-900 leading-snug">
-                Ka Jingnguh Bad Ka Jingburom
+                Acknowledgements & Heritage
               </h3>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10 text-stone-600 leading-relaxed text-base sm:text-lg">
               <div className="space-y-4">
                 <h4 className="font-serif font-bold text-stone-900 text-lg sm:text-xl flex items-center gap-2.5">
-                  <BookOpen className="w-5 h-5 text-amber-800 flex-shrink-0" /> Ki Nongpynkylla Hyndai
+                  <BookOpen className="w-5 h-5 text-amber-800 flex-shrink-0" /> Pioneer Translators
                 </h4>
                 <p className="text-sm sm:text-base leading-relaxed">
-                  Ngi ai khublei bad burom ia ki Pastor, ki tymmen basan, ki missionary, bad ki nongrwai hyndai kiba la pynkylla bad shna ia kine ki jingrwai kiba kordor. Ka jingtrei shitom jong ki ka la long ka mawnongrim ia ka jingngeit jong ngi mynta.
+                  We give heartfelt thanks and honor to the pastors, elders, missionaries, and pioneer authors who translated and composed these priceless hymns. Their diligent work remains the cornerstone of our faith today.
                 </p>
               </div>
 
               <div className="space-y-4">
                 <h4 className="font-serif font-bold text-stone-900 text-lg sm:text-xl flex items-center gap-2.5">
-                  <Heart className="w-5 h-5 text-amber-800 flex-shrink-0" /> Ka Balang U Khrist
+                  <Heart className="w-5 h-5 text-amber-800 flex-shrink-0" /> Church of Christ
                 </h4>
                 <p className="text-sm sm:text-base leading-relaxed">
-                  Kane ka digital hymnal ka long kaba la pynkhreh kyrpang ban pynneh pynsah ia ka sur bad ki kyntien Khasi ba shisha ha ki jingrwai mane Blei, khnang ba ki pateng ban dang wan kin ioh ban rwai bad pyndonburom ia U Trai.
+                  This digital hymnal is specially curated to preserve the traditional Khasi lyrics and melodies in Christian worship, ensuring future generations can continue to sing and glorify the Lord.
                 </p>
               </div>
             </div>
 
             <div className="bg-[#FAF9F6] border border-stone-200/60 rounded-3xl p-8 sm:p-10 text-center space-y-3 shadow-2xs">
               <p className="text-base sm:text-lg font-medium text-stone-800 italic leading-relaxed font-serif">
-                &ldquo;To rwai ha U Trai ka jingrwai kaba thymmai; to rwai ha U Trai, ko pyrthei baroh.&rdquo;
+                &ldquo;Sing to the Lord a new song; sing to the Lord, all the earth.&rdquo;
               </p>
-              <p className="text-xs sm:text-sm font-bold text-amber-800 tracking-wider uppercase">— Salm 96:1</p>
+              <p className="text-xs sm:text-sm font-bold text-amber-800 tracking-wider uppercase">— Psalm 96:1</p>
             </div>
           </section>
         </div>

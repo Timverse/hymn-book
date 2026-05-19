@@ -97,8 +97,8 @@ export default function DailyVerseHero() {
 
   const handleShare = async () => {
     const shareData = {
-      title: `Ka Dkhot Ba-Man-Ka-Sngi (${verse.reference})`,
-      text: `${verse.reference}\n\nKhasi: ${verse.khasiText}\n\nEnglish: ${verse.englishText}\n\nKa Kot Jingrwai App`,
+      title: `Daily Verse (${verse.reference})`,
+      text: `${verse.reference}\n\nKhasi: ${verse.khasiText}\n\nEnglish: ${verse.englishText}\n\nThe Hymn Book App`,
       url: window.location.href,
     };
     if (navigator.share) {
@@ -109,20 +109,20 @@ export default function DailyVerseHero() {
       }
     } else {
       handleCopy();
-      alert("La copy ia ka dkhot ha clipboard!");
+      alert("Verse copied to clipboard!");
     }
   };
 
   const scheduleDailyNotifications = async () => {
     try {
       if (!isNative) {
-        alert("Ka jingpyntip (Notification) ka treikam tang haba pyndonkam ha ka App (Android/iOS).");
+        alert("Notifications only work when running in the native app (Android/iOS).");
         return;
       }
 
       const perm = await LocalNotifications.requestPermissions();
       if (perm.display !== "granted") {
-        alert("Sngewbha plie ia ka jingbit (permissions) ban ioh jingpyntip man ka sngi.");
+        alert("Please grant notification permissions to receive daily reminders.");
         return;
       }
 
@@ -158,7 +158,7 @@ export default function DailyVerseHero() {
 
         pendingList.push({
           id: dailyVerse.id + (i * 100),
-          title: `Ka Dkhot Ba-Man-Ka-Sngi (${dailyVerse.reference})`,
+          title: `Daily Verse (${dailyVerse.reference})`,
           body: `${dailyVerse.khasiText}\n\n${dailyVerse.englishText}`,
           schedule: { at: scheduleDate },
           extra: { reference: dailyVerse.reference }
@@ -167,24 +167,24 @@ export default function DailyVerseHero() {
 
       await LocalNotifications.schedule({ notifications: pendingList });
       setIsReminderSet(true);
-      alert("La pynbeit ban phah jingpyntip (Notification) man ka step por 8:00 AM!");
+      alert("Daily reminders scheduled for 8:00 AM every morning!");
     } catch (e) {
       console.error("Error scheduling notifications:", e);
-      alert("Ym lah ban pynbeit ia ki notification.");
+      alert("Unable to schedule notifications.");
     }
   };
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-stone-900 via-stone-800 to-amber-950 text-white py-16 sm:py-20 md:py-28 border-b border-stone-800 shadow-2xl">
+    <section className="relative overflow-hidden bg-gradient-to-br from-stone-900 via-stone-800 to-amber-950 text-white py-16 sm:py-20 md:py-28 border-b border-stone-800 shadow-2xl animate-fadeIn">
       <div className="absolute inset-0 bg-[radial-gradient(#FAF9F6_1px,transparent_1px)] [background-size:24px_24px] opacity-10 pointer-events-none"></div>
       <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-amber-500 via-amber-600 to-amber-700"></div>
 
-      <div className="max-w-5xl mx-auto px-4 sm:px-8 lg:px-12 relative z-10 text-center space-y-8 sm:space-y-12 animate-fadeIn">
+      <div className="max-w-5xl mx-auto px-4 sm:px-8 lg:px-12 relative z-10 text-center space-y-8 sm:space-y-12">
         {/* Top Badge & Refresh Button */}
         <div className="flex flex-wrap items-center justify-center gap-3">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-amber-200 text-xs sm:text-sm font-semibold tracking-wide shadow-xs">
             <Sparkles className="w-4 h-4 text-amber-400 animate-pulse flex-shrink-0" />
-            <span>Ka Dkhot Ba-Man-Ka-Sngi (Daily Verse)</span>
+            <span>Daily Verse</span>
           </div>
 
           <button
@@ -195,7 +195,7 @@ export default function DailyVerseHero() {
             aria-label="Get another random verse"
           >
             <RefreshCw className={`w-3.5 h-3.5 text-amber-400 ${isRotating ? "animate-spin" : ""}`} />
-            <span>Pynkylla Dkhot (New Verse)</span>
+            <span>New Verse</span>
           </button>
         </div>
 
@@ -236,7 +236,7 @@ export default function DailyVerseHero() {
             aria-label="Copy Verse"
           >
             {copied ? <Check className="w-4 h-4 text-green-400" /> : <Copy className="w-4 h-4 text-amber-300" />}
-            <span>{copied ? "La Copy" : "Copy"}</span>
+            <span>{copied ? "Copied" : "Copy"}</span>
           </button>
 
           <button

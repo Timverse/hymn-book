@@ -581,10 +581,10 @@ export default function AlphabeticalIndexPage() {
         {/* Header */}
         <div className="space-y-4 animate-fadeIn px-2">
           <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-stone-900 tracking-tight leading-[1.15]">
-            Kdew Alphabet (Alphabetical Index)
+            Alphabetical Index
           </h1>
           <p className="text-stone-600 text-base sm:text-lg max-w-2xl leading-relaxed">
-            Wad ia ki jingrwai mane Blei da ki dak ba sdang jong ka kyrteng, pynbeit da ki nombor jingrwai ba shisha.
+            Browse Christian hymns by the starting letter of their title, arranged with their official hymn numbers.
           </p>
         </div>
 
@@ -598,7 +598,7 @@ export default function AlphabeticalIndexPage() {
             type="text"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            placeholder="Wad kyrteng ne nombor..."
+            placeholder="Filter by title or number..."
             className="w-full pl-14 sm:pl-12 pr-4 py-3.5 sm:py-3 rounded-full border border-stone-200/80 bg-white text-stone-900 placeholder:text-stone-400 text-sm focus:outline-none focus:ring-2 focus:ring-amber-600 focus:border-transparent transition-all shadow-2xs"
           />
         </div>
@@ -611,7 +611,7 @@ export default function AlphabeticalIndexPage() {
                 <div className="flex items-center gap-4 border-b border-stone-200/80 pb-3 px-2 sm:px-0">
                   <h2 className="font-serif text-3xl sm:text-4xl font-bold text-amber-900">{group.letter}</h2>
                   <span className="text-xs sm:text-sm font-sans font-medium px-3 py-1 rounded-full bg-amber-100 text-amber-800 shadow-2xs">
-                    {group.songs.length} {group.songs.length === 1 ? "Jingrwai" : "Jingrwai"}
+                    {group.songs.length} {group.songs.length === 1 ? "Song" : "Songs"}
                   </span>
                 </div>
 
@@ -648,16 +648,16 @@ export default function AlphabeticalIndexPage() {
           </div>
         ) : (
           <div className="bg-white border border-stone-200/80 rounded-3xl p-8 sm:p-12 md:p-16 text-center max-w-lg mx-auto space-y-4 shadow-xs animate-fadeIn">
-            <h3 className="font-serif text-xl sm:text-2xl font-bold text-stone-900">Ym Shem Jingrwai</h3>
+            <h3 className="font-serif text-xl sm:text-2xl font-bold text-stone-900">No Hymns Found</h3>
             <p className="text-stone-500 text-sm sm:text-base leading-relaxed">
-              Ngi ym shym la shem jingrwai ba iadei bad &ldquo;<strong className="text-stone-800">{searchQuery}</strong>&rdquo;.
+              No hymns were found matching &ldquo;<strong className="text-stone-800">{searchQuery}</strong>&rdquo;.
             </p>
             <button
               type="button"
               onClick={() => setSearchQuery("")}
               className="mt-4 px-8 py-3 bg-stone-900 text-white rounded-full text-sm font-medium hover:bg-stone-800 transition-colors shadow-md"
             >
-              Wad Biang
+              Clear Filter
             </button>
           </div>
         )}

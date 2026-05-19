@@ -5,7 +5,7 @@ import Link from "next/link";
 import { Hymn } from "@/data/hymns";
 import { Heart, ArrowRight, Bookmark, CloudDownload, CheckCircle, Loader2 } from "lucide-react";
 import { useAppNetwork } from "@/context/NetworkContext";
-import { AdMobService } from "@/services/AdMobService";
+import { UnityAdsService } from "@/services/UnityAdsService";
 
 interface HymnCardProps {
   hymn: Hymn;
@@ -63,7 +63,7 @@ export default function HymnCard({ hymn, onFavoriteChange }: HymnCardProps) {
     }
 
     setIsDownloading(true);
-    AdMobService.showRewardedAd(
+    UnityAdsService.showRewardedAd(
       () => {
         downloadHymn(hymn.id);
         setIsDownloading(false);
@@ -83,7 +83,7 @@ export default function HymnCard({ hymn, onFavoriteChange }: HymnCardProps) {
     <Link
       href={`/hymn/${hymn.id}`}
       className="group relative flex flex-col bg-white rounded-3xl border border-stone-200/80 p-6 sm:p-8 shadow-xs hover:shadow-xl hover:border-amber-600/40 active:scale-[0.99] transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-amber-600 focus:ring-offset-2"
-      aria-label={`Peit ia ka jingrwai ${hymn.number}: ${hymn.title}`}
+      aria-label={`View hymn ${hymn.number}: ${hymn.title}`}
     >
       {/* Top Bar: Number & Actions */}
       <div className="flex items-center justify-between mb-4 sm:mb-5 gap-2">
@@ -115,7 +115,7 @@ export default function HymnCard({ hymn, onFavoriteChange }: HymnCardProps) {
             type="button"
             onClick={toggleFavorite}
             className="p-2.5 rounded-full hover:bg-stone-100 text-stone-400 hover:text-red-600 transition-colors focus:outline-none focus:ring-2 focus:ring-amber-600 flex-shrink-0"
-            aria-label={isFavorite ? `Weng ia ${hymn.title} na ki ba jied` : `Buh ia ${hymn.title} ha ki ba jied`}
+            aria-label={isFavorite ? `Remove ${hymn.title} from favorites` : `Add ${hymn.title} to favorites`}
             aria-pressed={isFavorite}
           >
             <Heart className={`w-5 h-5 transition-transform group-hover:scale-110 ${isFavorite ? "fill-red-600 text-red-600" : ""}`} />
@@ -141,7 +141,7 @@ export default function HymnCard({ hymn, onFavoriteChange }: HymnCardProps) {
           {downloaded ? 'Available Offline' : 'Online View'}
         </span>
         <span className="flex items-center gap-1.5 font-semibold text-amber-800 group-hover:translate-x-1 transition-transform duration-200">
-          Peit Ki Kyntien <ArrowRight className="w-4 h-4 flex-shrink-0" />
+          View Lyrics <ArrowRight className="w-4 h-4 flex-shrink-0" />
         </span>
       </div>
     </Link>

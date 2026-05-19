@@ -9,10 +9,10 @@ export default function BottomTabBar() {
   const pathname = usePathname();
 
   const tabs = [
-    { name: "Sla Kmie", href: "/", icon: Home },
-    { name: "Ki Ba Jied", href: "/favorites", icon: Heart },
-    { name: "Ki Rynieng", href: "/indexes/alphabetical", icon: BookOpen, matchPrefix: "/indexes" },
-    { name: "Shaphang", href: "/about", icon: Info },
+    { name: "Home", href: "/", icon: Home },
+    { name: "Favorites", href: "/favorites", icon: Heart },
+    { name: "Indexes", href: "/indexes/alphabetical", icon: BookOpen, matchPrefix: "/indexes" },
+    { name: "About", href: "/about", icon: Info },
   ];
 
   return (

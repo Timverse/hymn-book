@@ -8,14 +8,14 @@ import { BookOpen, Bookmark, Users, Award } from "lucide-react";
 export default function IndexTabs() {
   const pathname = usePathname();
   const tabs = [
-    { name: "Kdew Alphabet", href: "/indexes/alphabetical", icon: BookOpen },
-    { name: "Kdew Lynnong", href: "/indexes/topical", icon: Bookmark },
-    { name: "Ki Nongpynkylla", href: "/indexes/translators", icon: Users },
-    { name: "Ki Nongshna", href: "/indexes/credits", icon: Award },
+    { name: "Alphabetical Index", href: "/indexes/alphabetical", icon: BookOpen },
+    { name: "Topical Index", href: "/indexes/topical", icon: Bookmark },
+    { name: "Translators", href: "/indexes/translators", icon: Users },
+    { name: "Credits", href: "/indexes/credits", icon: Award },
   ];
 
   return (
-    <div className="flex items-center gap-2 overflow-x-auto pb-4 border-b border-stone-200/80 mb-8 scrollbar-none">
+    <div className="flex items-center gap-2 overflow-x-auto pb-4 border-b border-stone-200/80 mb-8 scrollbar-none animate-fadeIn">
       {tabs.map((tab) => {
         const Icon = tab.icon;
         const isActive = pathname === tab.href;

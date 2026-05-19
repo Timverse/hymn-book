@@ -2,7 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
-import { BookOpen, Search, Wifi, WifiOff } from "lucide-react";
+import { BookOpen, Search } from "lucide-react";
 import { useAppNetwork } from "@/context/NetworkContext";
 
 export default function TopAppBar() {
@@ -15,7 +15,7 @@ export default function TopAppBar() {
         <Link 
           href="/" 
           className="flex items-center gap-3 group focus:outline-none focus:ring-2 focus:ring-amber-600 rounded-lg p-1"
-          aria-label="Ka Kot Jingrwai Home"
+          aria-label="The Hymn Book Home"
         >
           <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-amber-700 to-amber-900 flex items-center justify-center text-white shadow-md shadow-amber-900/10 group-hover:scale-105 transition-transform duration-300">
             <BookOpen className="w-4 h-4 animate-pulse" />
@@ -25,7 +25,7 @@ export default function TopAppBar() {
               Ka Kot Jingrwai<span className="text-amber-700">.</span>
             </span>
             <span className="text-[9px] uppercase tracking-widest text-stone-500 font-medium -mt-1">
-              Balang U Khrist
+              Church of Christ
             </span>
           </div>
         </Link>

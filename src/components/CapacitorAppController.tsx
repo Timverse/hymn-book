@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 import { App as CapacitorApp } from '@capacitor/app';
 import { Capacitor } from '@capacitor/core';
 import { useRouter, usePathname } from 'next/navigation';
-import { AdMobService } from '@/services/AdMobService';
+import { UnityAdsService } from '@/services/UnityAdsService';
 import { useAppNetwork } from '@/context/NetworkContext';
 
 export default function CapacitorAppController() {
@@ -12,14 +12,14 @@ export default function CapacitorAppController() {
   const pathname = usePathname();
   const { isOnline } = useAppNetwork();
 
-  // Initialize AdMob Banner when online
+  // Initialize Unity Ads Banner when online
   useEffect(() => {
     if (Capacitor.isNativePlatform()) {
-      AdMobService.initialize().then(() => {
+      UnityAdsService.initialize().then(() => {
         if (isOnline) {
-          AdMobService.showBanner();
+          UnityAdsService.showBanner();
         } else {
-          AdMobService.hideBanner();
+          UnityAdsService.hideBanner();
         }
       });
     }
